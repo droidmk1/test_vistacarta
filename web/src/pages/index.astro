@@ -1,0 +1,428 @@
+---
+import '@fontsource/figtree/400.css';
+import '@fontsource/figtree/500.css';
+import '@fontsource/figtree/600.css';
+import '@fontsource/figtree/700.css';
+import '@fontsource/figtree/800.css';
+import '../styles/menu.css';
+import menu from '../../../wantan/menu.json';
+
+import iSearch from 'lucide-static/icons/search.svg?raw';
+import iX from 'lucide-static/icons/x.svg?raw';
+import iCheck from 'lucide-static/icons/check.svg?raw';
+import iGrid from 'lucide-static/icons/layout-grid.svg?raw';
+import iList from 'lucide-static/icons/list.svg?raw';
+import iSort from 'lucide-static/icons/arrow-up-down.svg?raw';
+import iHouse from 'lucide-static/icons/house.svg?raw';
+import iCalendar from 'lucide-static/icons/calendar.svg?raw';
+import iInfo from 'lucide-static/icons/info.svg?raw';
+import iClock from 'lucide-static/icons/clock.svg?raw';
+import iChevron from 'lucide-static/icons/chevron-down.svg?raw';
+import iCarta from 'lucide-static/icons/utensils-crossed.svg?raw';
+import iPlatter from 'lucide-static/icons/hand-platter.svg?raw';
+import iSoup from 'lucide-static/icons/soup.svg?raw';
+import iFlame from 'lucide-static/icons/flame.svg?raw';
+import iEggFried from 'lucide-static/icons/egg-fried.svg?raw';
+import iPot from 'lucide-static/icons/cooking-pot.svg?raw';
+import iUtensils from 'lucide-static/icons/utensils.svg?raw';
+import iEgg from 'lucide-static/icons/egg.svg?raw';
+import iDrumstick from 'lucide-static/icons/drumstick.svg?raw';
+import iBeef from 'lucide-static/icons/beef.svg?raw';
+import iFeather from 'lucide-static/icons/feather.svg?raw';
+import iHam from 'lucide-static/icons/ham.svg?raw';
+import iKindling from 'lucide-static/icons/flame-kindling.svg?raw';
+import iStar from 'lucide-static/icons/star.svg?raw';
+import iChef from 'lucide-static/icons/chef-hat.svg?raw';
+import iShell from 'lucide-static/icons/shell.svg?raw';
+import iBeer from 'lucide-static/icons/beer.svg?raw';
+import iSoda from 'lucide-static/icons/cup-soda.svg?raw';
+import iMartini from 'lucide-static/icons/martini.svg?raw';
+
+const iconos = {
+  Entradas: iPlatter,
+  Sopas: iSoup,
+  Alitas: iFlame,
+  Aeropuertos: iEggFried,
+  'Arroz Chaufa': iPot,
+  Tallarines: iUtensils,
+  Tortillas: iEgg,
+  Pollo: iDrumstick,
+  Ternera: iBeef,
+  Pato: iFeather,
+  'Cerdo Asado': iHam,
+  'Platos a la Plancha': iKindling,
+  'Platos Especiales': iStar,
+  Combinados: iChef,
+  Langostino: iShell,
+  Cervezas: iBeer,
+  Refrescos: iSoda,
+  Cócteles: iMartini,
+};
+
+const eur = new Intl.NumberFormat('es-ES', { style: 'currency', currency: menu.restaurante.moneda || 'EUR' });
+const fmt = (valor) => eur.format(valor);
+const slugify = (texto) =>
+  texto
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
+const categorias = menu.categorias.map((categoria) => ({
+  ...categoria,
+  id: slugify(categoria.nombre),
+  icono: iconos[categoria.nombre] ?? iCarta,
+}));
+const total = categorias.reduce((n, c) => n + c.platos.length, 0);
+const dia = menu.menu_del_dia;
+const [nombreCorto, ...resto] = menu.restaurante.nombre.split(' ');
+const apellido = resto.join(' ');
+const borrador = menu.estado === 'borrador';
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#c8102e" />
+    <title>{menu.restaurante.nombre} · Carta</title>
+    <meta name="description" content={`Carta de ${menu.restaurante.nombre}: menú del día y ${total} platos.`} />
+    <script is:inline>document.documentElement.classList.add('js');</script>
+  </head>
+  <body id="inicio">
+    <p class="topbar">
+      <span class="ico" set:html={iClock} />
+      <span><strong>{dia.nombre} {fmt(dia.precio)}</strong> · {dia.horario.replace('De lunes a viernes, de ', 'L–V ').replace(' h', '')}</span>
+    </p>
+
+    <header class="appbar">
+      <a class="brand" href="#inicio" aria-label={`${menu.restaurante.nombre}, ir al inicio`}>
+        <span class="monogram" aria-hidden="true">{nombreCorto.charAt(0)}</span>
+        <span class="brand-text">
+          <span class="brand-name">{nombreCorto}</span>
+          {apellido && <span class="brand-sub">{apellido}</span>}
+        </span>
+      </a>
+      <button class="icon-btn" type="button" data-open-search aria-label="Buscar plato" aria-controls="buscador" aria-expanded="false">
+        <span class="ico" set:html={iSearch} />
+      </button>
+    </header>
+
+    <div class="searchbar" id="buscador" hidden>
+      <label class="search-field">
+        <span class="ico" set:html={iSearch} />
+        <span class="sr-only">Buscar en la carta</span>
+        <input id="q" type="search" placeholder="Busca un plato, p. ej. chaufa" autocomplete="off" enterkeyhint="search" />
+      </label>
+      <button class="text-btn" type="button" data-close-search>Cancelar</button>
+    </div>
+
+    <main>
+      <section class="dia" id="menu-dia" aria-labelledby="dia-titulo">
+        <div class="dia-head">
+          <div>
+            <h2 id="dia-titulo">{dia.nombre}</h2>
+            <p class="dia-meta">Entrante, segundo, bebida y postre</p>
+          </div>
+          <p class="dia-price">{fmt(dia.precio)}</p>
+        </div>
+        <details class="dia-detalle">
+          <summary>
+            <span>Ver platos · L–V, no festivos</span>
+            <span class="ico" set:html={iChevron} />
+          </summary>
+          <div class="dia-cols">
+            <div>
+              <h3>Entrantes</h3>
+              <ul>
+                {dia.entrantes.map((plato) => (
+                  <li>
+                    <span>{plato.nombre}</span>
+                    {plato.suplemento > 0 && <span class="extra">+{fmt(plato.suplemento)}</span>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3>Segundos</h3>
+              <ul>
+                {dia.segundos.map((nombre) => <li><span>{nombre}</span></li>)}
+              </ul>
+            </div>
+            <div>
+              <h3>Bebida con suplemento</h3>
+              <ul>
+                {dia.suplementos_bebida.map((bebida) => (
+                  <li>
+                    <span>{bebida.nombre}</span>
+                    <span class="extra">+{fmt(bebida.suplemento)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <nav class="cats" id="carta" aria-label="Categorías de la carta">
+        <ul>
+          {categorias.map((categoria, i) => (
+            <li>
+              <a class="cat" href={`#${categoria.id}`} data-cat={categoria.id} aria-current={i === 0 ? 'true' : undefined}>
+                <span class="cat-plate" aria-hidden="true"><span class="ico" set:html={categoria.icono} /></span>
+                <span class="cat-name">{categoria.nombre}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <div class="toolbar">
+        <div class="view-toggle" role="group" aria-label="Vista">
+          <span class="toolbar-label" aria-hidden="true">Vista</span>
+          <button type="button" class="seg" data-view="list" aria-pressed="true" aria-label="Lista">
+            <span class="ico" set:html={iList} />
+          </button>
+          <button type="button" class="seg" data-view="grid" aria-pressed="false" aria-label="Rejilla">
+            <span class="ico" set:html={iGrid} />
+          </button>
+        </div>
+        <button type="button" class="sort" id="abrir-orden" aria-haspopup="dialog" aria-controls="hoja-orden">
+          <span class="ico" set:html={iSort} />
+          <span>Ordenar</span>
+          <span class="sort-current" id="orden-actual" hidden></span>
+        </button>
+      </div>
+
+      <p class="count" id="contador" aria-live="polite">{total} platos</p>
+
+      <div class="sections" data-view="list">
+        {categorias.map((categoria) => (
+          <section class="cat-section" id={categoria.id} data-cat={categoria.id} aria-labelledby={`${categoria.id}-t`}>
+            <h2 class="cat-title" id={`${categoria.id}-t`}>{categoria.nombre}</h2>
+            <ul class="dishes">
+              {categoria.platos.map((plato, i) => (
+                <li
+                  class:list={['dish', { 'is-off': !plato.disponible }]}
+                  data-name={plato.nombre}
+                  data-price={plato.precio}
+                  data-order={i}
+                >
+                  <span class="dish-media" aria-hidden="true">
+                    <span class="plate"><span class="ico" set:html={categoria.icono} /></span>
+                  </span>
+                  <span class="dish-body">
+                    <h3 class="dish-name">{plato.nombre}</h3>
+                    {plato.descripcion && <p class="dish-desc">{plato.descripcion}</p>}
+                    <span class="dish-foot">
+                      <span class="dish-price">{fmt(plato.precio)}</span>
+                      {!plato.disponible && <span class="badge">Agotado</span>}
+                    </span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+
+        <div class="empty" id="vacio" hidden>
+          <p class="empty-title">No hay platos con «<span id="vacio-q"></span>»</p>
+          <p>Prueba con otra palabra, como «chaufa», «pollo» o «sopa».</p>
+          <button class="text-btn" type="button" data-clear-search>Ver toda la carta</button>
+        </div>
+      </div>
+
+      <section class="info" id="info" aria-labelledby="info-t">
+        <h2 id="info-t">Información</h2>
+        <dl>
+          <div>
+            <dt>Menú del día</dt>
+            <dd>{dia.horario}. No incluye {dia.excluye.toLowerCase()}.</dd>
+          </div>
+          <div>
+            <dt>Alergias e intolerancias</dt>
+            <dd>Consulta con el personal antes de pedir. Te indicarán los alérgenos de cada plato.</dd>
+          </div>
+          {borrador && (
+            <div>
+              <dt>Carta en revisión</dt>
+              <dd>Esta es una vista previa. Los nombres y precios pueden cambiar hasta que el restaurante la apruebe.</dd>
+            </div>
+          )}
+        </dl>
+      </section>
+    </main>
+
+    <dialog class="sheet" id="hoja-orden" aria-labelledby="hoja-orden-t">
+      <form method="dialog" class="sheet-inner">
+        <div class="sheet-head">
+          <h2 id="hoja-orden-t">Ordenar por</h2>
+          <button class="icon-btn sheet-close" value="cancel" formnovalidate aria-label="Cerrar">
+            <span class="ico" set:html={iX} />
+          </button>
+        </div>
+        <fieldset class="sheet-options">
+          <legend class="sr-only">Orden de los platos</legend>
+          {[
+            ['carta', 'Recomendado'],
+            ['precio-asc', 'Menor a mayor precio'],
+            ['precio-desc', 'Mayor a menor precio'],
+            ['nombre', 'A – Z'],
+            ['nombre-desc', 'Z – A'],
+          ].map(([valor, texto], i) => (
+            <label class="sheet-option">
+              <input type="radio" name="orden" value={valor} checked={i === 0} />
+              <span>{texto}</span>
+              <span class="ico check" set:html={iCheck} />
+            </label>
+          ))}
+        </fieldset>
+        <button class="sheet-apply" value="apply">Mostrar resultados</button>
+      </form>
+    </dialog>
+
+    <nav class="bottomnav" aria-label="Navegación principal">
+      <a href="#inicio"><span class="ico" set:html={iHouse} /><span>Inicio</span></a>
+      <a href="#menu-dia"><span class="ico" set:html={iCalendar} /><span>Menú</span></a>
+      <a href="#carta" class="bn-main"><span class="bn-disc"><span class="ico" set:html={iCarta} /></span><span>Carta</span></a>
+      <button type="button" data-open-search><span class="ico" set:html={iSearch} /><span>Buscar</span></button>
+      <a href="#info"><span class="ico" set:html={iInfo} /><span>Info</span></a>
+    </nav>
+
+    <script>
+      const root = document.querySelector('.sections');
+      const sections = [...document.querySelectorAll('.cat-section')];
+      const chips = [...document.querySelectorAll('.cat')];
+      const counter = document.getElementById('contador');
+      const empty = document.getElementById('vacio');
+      const emptyQ = document.getElementById('vacio-q');
+      const searchbar = document.getElementById('buscador');
+      const input = document.getElementById('q');
+      const sheet = document.getElementById('hoja-orden');
+      const sortOpen = document.getElementById('abrir-orden');
+      const sortCurrent = document.getElementById('orden-actual');
+      const radios = [...sheet.querySelectorAll('input[name="orden"]')];
+      let sortMode = 'carta';
+      const viewBtns = [...document.querySelectorAll('[data-view]')].filter((el) => el.tagName === 'BUTTON');
+      const openers = [...document.querySelectorAll('[data-open-search]')];
+
+      const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+      const store = {
+        get: (k) => { try { return localStorage.getItem(k); } catch { return null; } },
+        set: (k, v) => { try { localStorage.setItem(k, v); } catch {} },
+      };
+      const plural = (n) => (n === 1 ? '1 resultado' : `${n} resultados`);
+
+      let active = sections[0]?.dataset.cat;
+      let query = '';
+
+      function render() {
+        const q = norm(query.trim());
+        let visible = 0;
+        for (const sec of sections) {
+          const dishes = [...sec.querySelectorAll('.dish')];
+          let shown = 0;
+          for (const d of dishes) {
+            const hit = q ? norm(d.dataset.name).includes(q) : sec.dataset.cat === active;
+            d.hidden = !hit;
+            if (hit) shown++;
+          }
+          sec.hidden = shown === 0;
+          sec.classList.toggle('show-title', Boolean(q));
+          visible += shown;
+        }
+        for (const c of chips) {
+          if (!q && c.dataset.cat === active) c.setAttribute('aria-current', 'true');
+          else c.removeAttribute('aria-current');
+        }
+        empty.hidden = visible > 0;
+        emptyQ.textContent = query.trim();
+        const name = sections.find((s) => s.dataset.cat === active)?.querySelector('.cat-title')?.textContent;
+        counter.textContent = q ? `${plural(visible)} para «${query.trim()}»` : `${plural(visible)} · ${name}`;
+      }
+
+      function sortDishes(mode) {
+        for (const sec of sections) {
+          const list = sec.querySelector('.dishes');
+          const items = [...list.children];
+          const by = {
+            carta: (a, b) => a.dataset.order - b.dataset.order,
+            'precio-asc': (a, b) => a.dataset.price - b.dataset.price || a.dataset.order - b.dataset.order,
+            'precio-desc': (a, b) => b.dataset.price - a.dataset.price || a.dataset.order - b.dataset.order,
+            nombre: (a, b) => a.dataset.name.localeCompare(b.dataset.name, 'es'),
+            'nombre-desc': (a, b) => b.dataset.name.localeCompare(a.dataset.name, 'es'),
+          }[mode];
+          items.sort(by).forEach((el) => list.appendChild(el));
+        }
+      }
+
+      function setView(view) {
+        root.dataset.view = view;
+        viewBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
+        store.set('vc-vista', view);
+      }
+
+      function openSearch() {
+        searchbar.hidden = false;
+        document.body.classList.add('searching');
+        openers.forEach((b) => b.setAttribute('aria-expanded', 'true'));
+        window.scrollTo({ top: 0 });
+        input.focus();
+      }
+      function closeSearch() {
+        searchbar.hidden = true;
+        document.body.classList.remove('searching');
+        openers.forEach((b) => b.setAttribute('aria-expanded', 'false'));
+        input.value = '';
+        query = '';
+        render();
+      }
+
+      chips.forEach((c) =>
+        c.addEventListener('click', (e) => {
+          e.preventDefault();
+          active = c.dataset.cat;
+          if (query) closeSearch();
+          render();
+          c.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+        }),
+      );
+      viewBtns.forEach((b) => b.addEventListener('click', () => setView(b.dataset.view)));
+      // Hoja de "Ordenar por": elegir marca la opción, "Mostrar resultados" la aplica.
+      sortOpen.addEventListener('click', () => {
+        radios.forEach((r) => (r.checked = r.value === sortMode));
+        sheet.showModal();
+      });
+      sheet.addEventListener('close', () => {
+        if (sheet.returnValue !== 'apply') return;
+        const picked = radios.find((r) => r.checked);
+        sortMode = picked.value;
+        sortDishes(sortMode);
+        const label = picked.parentElement.querySelector('span').textContent;
+        sortCurrent.textContent = label;
+        sortCurrent.hidden = sortMode === 'carta';
+        sortOpen.classList.toggle('is-set', sortMode !== 'carta');
+      });
+      sheet.addEventListener('click', (e) => {
+        if (e.target === sheet) sheet.close('cancel');
+      });
+
+      openers.forEach((b) => b.addEventListener('click', openSearch));
+      document.querySelector('[data-close-search]').addEventListener('click', closeSearch);
+      document.querySelector('[data-clear-search]').addEventListener('click', closeSearch);
+      input.addEventListener('input', () => { query = input.value; render(); });
+      input.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeSearch(); });
+      // Si el campo queda vacío y el usuario sale de él, la barra se cierra sola.
+      input.addEventListener('blur', () => {
+        setTimeout(() => {
+          if (!input.value.trim() && !searchbar.contains(document.activeElement)) closeSearch();
+        }, 150);
+      });
+      document.querySelectorAll('.bottomnav a').forEach((a) => a.addEventListener('click', () => { if (!searchbar.hidden) closeSearch(); }));
+
+      setView(store.get('vc-vista') === 'grid' ? 'grid' : 'list');
+      render();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,312 @@
+{
+  "restaurante": {
+    "slug": "wantan-chifa-peruano",
+    "nombre": "Wantan Chifa Peruano",
+    "logo_url": null,
+    "colores": { "primario": null, "secundario": null },
+    "moneda": "EUR",
+    "idiomas": ["es"]
+  },
+  "fuente": "PDF_WANTAN.pdf (4 páginas, Canva, sin capa de texto; transcrito por lectura de imagen)",
+  "menu_del_dia": {
+    "nombre": "Menú del día",
+    "precio": 15.5,
+    "incluye": ["entrante", "segundo", "bebida", "postre"],
+    "horario": "De lunes a viernes, de 13:00 a 17:00 h",
+    "excluye": "Festivos",
+    "entrantes": [
+      { "nombre": "Wantan Frito", "suplemento": 0 },
+      { "nombre": "Sopa Wantan", "suplemento": 0 },
+      { "nombre": "Sopa Kion", "suplemento": 0 },
+      { "nombre": "Caldo de Pollo y Verduras", "suplemento": 0 },
+      { "nombre": "Caldo de Verduras", "suplemento": 0 },
+      { "nombre": "Rollitos de Primavera", "suplemento": 0 },
+      { "nombre": "Empanaditas Chinas", "suplemento": 0 },
+      { "nombre": "Nabo Encurtido", "suplemento": 0 },
+      { "nombre": "Ceviche Clasico", "suplemento": 2 },
+      { "nombre": "Ceviche Carretillero", "suplemento": 3 }
+    ],
+    "segundos": [
+      "Arroz Chaufa con Pollo", "Arroz Chaufa Con Cerdo", "Arroz Chaufa Mixto", "Arroz Chaufa Salvaje",
+      "Aeropuerto con Pollo", "Aeropuerto con Cerdo", "Aeropuerto Mixto", "Aeropuerto Salvaje",
+      "Combinado de Pollo", "Combinado de Cerdo", "Combinado Mixto",
+      "Pollo con verduras",
+      "Tallarin Saltado de Pollo", "Tallarin Saltado de Cerdo", "Tallarin Saltado Mixto",
+      "Chijaukay", "Tipakay", "Limonkay",
+      "Tortilla con verduras",
+      "Kam Lu Wantan"
+    ],
+    "suplementos_bebida": [
+      { "nombre": "Inca Kola", "suplemento": 2 },
+      { "nombre": "Pilsen", "suplemento": 2 },
+      { "nombre": "Cusqueña", "suplemento": 3 },
+      { "nombre": "Pisco sour", "suplemento": 5 }
+    ],
+    "dudoso": ["nombre de Inca Kola: en la carta aparece como Inka Kola"]
+  },
+  "categorias": [
+    {
+      "nombre": "Entradas",
+      "platos": [
+        {"id": "p01", "nombre": "1/2 doc. Wantán Frito", "descripcion": null, "precio": 7.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p02", "nombre": "1 doc. Wantán Frito", "descripcion": null, "precio": 12.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p03", "nombre": "1/2 doc. de Canastitas Amazónicas", "descripcion": null, "precio": 12.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p04", "nombre": "1 doc. de Canastitas Amazónicas", "descripcion": null, "precio": 22.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p05", "nombre": "1/2 doc. Wantán frito de Gambas", "descripcion": null, "precio": 9.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p06", "nombre": "1 doc. Wantán frito de Gambas", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p07", "nombre": "1/2 doc. Rollitos Primavera", "descripcion": null, "precio": 6.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p08", "nombre": "1 doc. Rollitos Primavera", "descripcion": null, "precio": 10.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p09", "nombre": "1/2 doc. Empanaditas Chinas", "descripcion": null, "precio": 7.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p10", "nombre": "1 doc. Empanaditas Chinas", "descripcion": null, "precio": 12.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p11", "nombre": "Chicharrón de pollo", "descripcion": null, "precio": 14.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p12", "nombre": "Chicharrón de pollo con arroz blanco", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p13", "nombre": "Patatas fritas", "descripcion": null, "precio": 8.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p14", "nombre": "Yuquitas fritas", "descripcion": null, "precio": 9.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p15", "nombre": "Patacones", "descripcion": null, "precio": 10.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Sopas",
+      "platos": [
+        {"id": "p16", "nombre": "Wantan", "descripcion": null, "precio": 12.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p17", "nombre": "De Kion", "descripcion": null, "precio": 12.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p18", "nombre": "De Pollo con Verduras", "descripcion": null, "precio": 12.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p19", "nombre": "De verduras", "descripcion": null, "precio": 12.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p20", "nombre": "Fuchifú", "descripcion": null, "precio": 12.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p21", "nombre": "Wantán Especial", "descripcion": null, "precio": 14.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Alitas",
+      "platos": [
+        {"id": "p22", "nombre": "Alitas Fritas", "descripcion": null, "precio": 12.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p23", "nombre": "Alitas con Verduras", "descripcion": null, "precio": 14.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p24", "nombre": "Alitas Agridulces", "descripcion": null, "precio": 14.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p25", "nombre": "Alitas Picante", "descripcion": null, "precio": 14.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p26", "nombre": "Alitas Tausi", "descripcion": null, "precio": 14.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p27", "nombre": "Alitas Acevichadas", "descripcion": null, "precio": 14.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Aeropuertos",
+      "platos": [
+        {"id": "p28", "nombre": "Aeropuerto con Pollo", "descripcion": null, "precio": 15.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p29", "nombre": "Aeropuerto con Cerdo", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p30", "nombre": "Aeropuerto Mixto", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p31", "nombre": "Aeropuerto con Ternera", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p32", "nombre": "Aeropuerto Especial", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p33", "nombre": "Aeropuerto con Pato", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p34", "nombre": "Aeropuerto con Pollo y Langostino", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p35", "nombre": "Aeropuerto de Cecina", "descripcion": null, "precio": 20.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p36", "nombre": "Aeropuerto con Langostinos", "descripcion": null, "precio": 20.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p37", "nombre": "Aeropuerto con Mariscos", "descripcion": null, "precio": 20.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p38", "nombre": "Aeropuerto de la Casa", "descripcion": null, "precio": 20.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p39", "nombre": "Aeropuerto Salvaje", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p40", "nombre": "Aeropuerto Vegetariano", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p41", "nombre": "Aeropuerto Vegano", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Arroz Chaufa",
+      "platos": [
+        {"id": "p42", "nombre": "Arroz Chaufa con Pollo", "descripcion": null, "precio": 14.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p43", "nombre": "Arroz Chaufa con Cerdo", "descripcion": null, "precio": 15.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p44", "nombre": "Arroz Chaufa Mixto", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p45", "nombre": "Arroz Chaufa Amazónico", "descripcion": null, "precio": 24.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p46", "nombre": "Arroz Chaufa con Ternera", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p47", "nombre": "Arroz Chaufa Especial", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p48", "nombre": "Arroz Chaufa con Pato", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p49", "nombre": "Arroz Chaufa con Pollo y Langostinos", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p50", "nombre": "Arroz Chaufa con Cecina", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p51", "nombre": "Arroz Chaufa con Langostino", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p52", "nombre": "Arroz Chaufa con Mariscos", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p53", "nombre": "Arroz Chaufa Salvaje", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p54", "nombre": "Arroz Chaufa Vegetariano", "descripcion": null, "precio": 15.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p55", "nombre": "Arroz Chaufa Vegano", "descripcion": null, "precio": 15.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p56", "nombre": "Porción de Arroz Blanco", "descripcion": null, "precio": 4.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p57", "nombre": "Porción de Arroz Chaufa", "descripcion": null, "precio": 8.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Tallarines",
+      "platos": [
+        {"id": "p58", "nombre": "T. Saltado con Pollo", "descripcion": null, "precio": 15.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p59", "nombre": "T. Saltado con Cerdo", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p60", "nombre": "T. Saltado Mixto", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p61", "nombre": "T. Saltado con Ternera", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p62", "nombre": "T. Saltado Especial", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p63", "nombre": "T. Saltado de Pato", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p64", "nombre": "T. Saltado de Mariscos", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p65", "nombre": "T. Saltado con Pollo y Langostino", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p66", "nombre": "T. Saltado con Cecina", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p67", "nombre": "T. Saltado con Langostinos", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p68", "nombre": "T. Saltado con Pollo en Trozos", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p69", "nombre": "T. Saltado con Pollo en Trozos Picante", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p70", "nombre": "T. Saltado Vegetariano", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p71", "nombre": "T. Saltado Vegano", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p72", "nombre": "T. Sam si", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": ["nombre"]},
+        {"id": "p73", "nombre": "T. Taypá", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p74", "nombre": "T. Saltado frito de Pollo", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p75", "nombre": "T. Saltado frito de Cerdo", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p76", "nombre": "T. Saltado frito Mixto", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p77", "nombre": "T. Saltado frito de Ternera", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p78", "nombre": "T. Saltado frito Especial", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p79", "nombre": "T. Saltado frito de Pato", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p80", "nombre": "T. Saltado frito de Mariscos", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p81", "nombre": "T. Saltado frito de Pollo y Langostino", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p82", "nombre": "T. Saltado frito de Langostinos", "descripcion": null, "precio": 20.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p83", "nombre": "T. Saltado frito de Pollo en Trozos", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p84", "nombre": "T. Saltado frito de Pollo en Trozos picantes", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p85", "nombre": "T. Saltado frito Vegetariano", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p86", "nombre": "T. Saltado frito Vegano", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p87", "nombre": "T. Saltado frito Taypá", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Tortillas",
+      "platos": [
+        {"id": "p88", "nombre": "De Langostinos con Verduras", "descripcion": null, "precio": 14.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p89", "nombre": "De Pollo con Verduras", "descripcion": null, "precio": 12.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p90", "nombre": "De huevo", "descripcion": null, "precio": 9.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Pollo",
+      "platos": [
+        {"id": "p91", "nombre": "Chijaukay", "descripcion": null, "precio": 15.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p92", "nombre": "Tipakay", "descripcion": null, "precio": 15.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p93", "nombre": "Limonkay", "descripcion": null, "precio": 15.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p94", "nombre": "Chijaukay 2 sabores (dulce y salado)", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p95", "nombre": "Pollo en Trozos con Verduras", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p96", "nombre": "Pollo en Trozos con Tamarindo (Piña y Durazno)", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p97", "nombre": "Pollo en Trozos con Verduras Picantes", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p98", "nombre": "Pollo en Trozos con Brócoli", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p99", "nombre": "Pollo en Trozos con Champiñones", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p100", "nombre": "Pollo en Trozos con Frejol Chino", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p101", "nombre": "Pollo en Trozos al Ajo", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Ternera",
+      "platos": [
+        {"id": "p102", "nombre": "Ternera con Verduras", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p103", "nombre": "Ternera con Champiñones", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p104", "nombre": "Ternera con Tamarindo (Piña y Durazno)", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p105", "nombre": "Ternera al Ajo", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p106", "nombre": "Ternera con Tausi", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p107", "nombre": "Ternera con Brócoli", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p108", "nombre": "Ternera con Verduras Picantes", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p109", "nombre": "Ternera con Hongos Chinos", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p110", "nombre": "Ternera con Frejol Chino", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Pato",
+      "platos": [
+        {"id": "p111", "nombre": "Pato con Verduras", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p112", "nombre": "Pato con Champiñones", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p113", "nombre": "Pato con Tamarindo (Piña y Durazno)", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p114", "nombre": "Pato al Ajo", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p115", "nombre": "Pato con Tausi", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p116", "nombre": "Pato con Brócoli", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p117", "nombre": "Pato con Verduras Picantes", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p118", "nombre": "Pato con Hongos Chinos", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p119", "nombre": "Pato con Frejol Chino", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Cerdo Asado",
+      "platos": [
+        {"id": "p120", "nombre": "Cerdo Asado con Verduras", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p121", "nombre": "Cerdo Asado con Champiñones", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p122", "nombre": "Cerdo Asado con Tamarindo (Piña y Durazno)", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p123", "nombre": "Cerdo Asado al Ajo", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p124", "nombre": "Cerdo Asado con Tausi", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p125", "nombre": "Cerdo Asado con Brócoli", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p126", "nombre": "Cerdo Asado con Verduras Picantes", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p127", "nombre": "Cerdo Asado con Hongos Chinos", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p128", "nombre": "Cerdo Asado con Frejol Chino", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Platos a la Plancha",
+      "platos": [
+        {"id": "p129", "nombre": "Taypá a la Plancha", "descripcion": null, "precio": 20.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p130", "nombre": "Pollo en Trozos a la Plancha", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p131", "nombre": "Ternera a la Plancha", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p132", "nombre": "Cerdo a la Plancha", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p133", "nombre": "Langostino a la Plancha", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Platos Especiales",
+      "platos": [
+        {"id": "p134", "nombre": "Kan Lu Wantan", "descripcion": null, "precio": 20.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p135", "nombre": "Pollo Saltado", "descripcion": "Con arroz chaufa: +2,00 €", "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p136", "nombre": "Lomo Saltado", "descripcion": "Con arroz chaufa: +2,00 €", "precio": 20.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Combinados",
+      "platos": [
+        {"id": "p137", "nombre": "Combinado de Pollo", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p138", "nombre": "Combinado de Cerdo", "descripcion": null, "precio": 17.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p139", "nombre": "Combinado Mixto", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p140", "nombre": "Combinado de Ternera", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p141", "nombre": "Combinado Especial", "descripcion": null, "precio": 18.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p142", "nombre": "Combinado Pollo y Langostinos", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p143", "nombre": "Combinado de Pato", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p144", "nombre": "Combinado de Langostinos", "descripcion": null, "precio": 20.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p145", "nombre": "Combinado Vegetariano", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p146", "nombre": "Combinado Vegano", "descripcion": null, "precio": 16.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Langostino",
+      "platos": [
+        {"id": "p147", "nombre": "Langostino con Verduras", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p148", "nombre": "Langostino con Champiñones", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p149", "nombre": "Langostinos con Tamarindo (Piña y Durazno)", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p150", "nombre": "Langostino con Brócoli", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p151", "nombre": "Langostino al Ajo", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p152", "nombre": "Langostinos con Verduras Picantes", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p153", "nombre": "Langostino con Tausi", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p154", "nombre": "Langostino con Hongos Chinos", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p155", "nombre": "Langostino con Frejol Chino", "descripcion": null, "precio": 19.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Cervezas",
+      "platos": [
+        {"id": "p156", "nombre": "Cusqueña", "descripcion": null, "precio": 5.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p157", "nombre": "Pilsen", "descripcion": null, "precio": 4.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p158", "nombre": "Cerveza de tirador", "descripcion": null, "precio": 3.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Refrescos",
+      "platos": [
+        {"id": "p159", "nombre": "Inka Kola", "descripcion": null, "precio": 3.5, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": ["nombre"]},
+        {"id": "p160", "nombre": "Limonada con jengibre y menta", "descripcion": null, "precio": 3.5, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p161", "nombre": "Maracuyá", "descripcion": null, "precio": 4.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p162", "nombre": "Maracuyá (jarra)", "descripcion": null, "precio": 12.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p163", "nombre": "Chicha morada", "descripcion": null, "precio": 4.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p164", "nombre": "Chicha morada (jarra)", "descripcion": null, "precio": 12.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p165", "nombre": "Agua", "descripcion": null, "precio": 2.7, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p166", "nombre": "Fuse Tea", "descripcion": null, "precio": 3.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p167", "nombre": "Refrescos / gaseosas", "descripcion": null, "precio": 3.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    },
+    {
+      "nombre": "Cócteles",
+      "platos": [
+        {"id": "p168", "nombre": "Pisco sour", "descripcion": null, "precio": 9.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p169", "nombre": "Maracuyá sour", "descripcion": null, "precio": 9.5, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p170", "nombre": "Chilcano", "descripcion": null, "precio": 9.0, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []},
+        {"id": "p171", "nombre": "Chilcano de maracuyá", "descripcion": null, "precio": 9.5, "disponible": true, "alergenos": [], "alergenos_confirmados": false, "dudoso": []}
+      ]
+    }
+  ],
+  "version": 1,
+  "estado": "borrador"
+}
