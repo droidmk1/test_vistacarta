@@ -1,0 +1,1098 @@
+{
+  "restaurante": {
+    "slug": "inti-chaska",
+    "nombre": "Inti&Chaska Peruvian Kitchen",
+    "logo_url": "logos/inti-chaska.png",
+    "colores": {
+      "primario": "#c2974d",
+      "secundario": "#f1e6cf"
+    },
+    "redes": {
+      "instagram": "https://www.instagram.com/inti.chaska/",
+      "reservas_url": "https://linktr.ee/intichaska?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+      "google_resenas": "https://www.google.com/maps/search/?api=1&query=Inti%26Chaska%20Cocina%20Peruana%2C%20Carrer%20d'Arag%C3%B3%2C%20211%2C%2008011%20Barcelona"
+    },
+    "contacto": {
+      "direccion": "Carrer d'Aragó, 211, 08011 Barcelona"
+    },
+    "moneda": "EUR",
+    "idiomas": [
+      "es"
+    ]
+  },
+  "fuente": "inti_chaska.pdf (2 páginas, Canva, con capa de texto; transcrito con pdftotext y verificado contra la imagen)",
+  "alergenos_nota": "Propuesta deducida por IA a partir del nombre, la descripción y la cocina peruana habitual (crema huancaína con queso, leche y galleta; mayonesa en causas; apio en la leche de tigre; sillao con trigo; clara de huevo en los sours; sulfitos en vinos). Pendiente de confirmar por el restaurante.",
+  "categorias": [
+    {
+      "nombre": "Entrantes",
+      "platos": [
+        {
+          "id": "p01",
+          "nombre": "Papa a la Huancaína",
+          "descripcion": "Patatas cocidas con crema de ají amarillo",
+          "precio": 12,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "leche"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p02",
+          "nombre": "Festival de Causas",
+          "descripcion": "Tres tipos de causas: Limeña, acevichada y olivada",
+          "precio": 20,
+          "disponible": true,
+          "alergenos": [
+            "huevo",
+            "pescado"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p03",
+          "nombre": "Causa Limeña",
+          "descripcion": "Puré de patatas relleno de pollo y aguacate",
+          "precio": 12,
+          "disponible": true,
+          "alergenos": [
+            "huevo"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p04",
+          "nombre": "Causa de Atún",
+          "descripcion": "Puré de patatas con ají amarillo y lima",
+          "precio": 12,
+          "disponible": true,
+          "alergenos": [
+            "huevo",
+            "pescado"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p05",
+          "nombre": "Causa Achorada",
+          "descripcion": "Puré de patatas con trozos de pescado arrebozado y frito",
+          "precio": 16,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "pescado"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p06",
+          "nombre": "Causa Acevichada",
+          "descripcion": "Puré de patatas, cubos de pescado marinados en leche de tigre",
+          "precio": 16,
+          "disponible": true,
+          "alergenos": [
+            "huevo",
+            "pescado",
+            "apio"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p07",
+          "nombre": "Causa Crocante",
+          "descripcion": "Puré de patatas fritas al panko con gambas salteadas y salsa rosa",
+          "precio": 16,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "crustaceos",
+            "huevo"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p08",
+          "nombre": "Anticuchos de Corazón",
+          "descripcion": "Con patata, choclo y crema huancaína",
+          "precio": 12,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "leche"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        }
+      ]
+    },
+    {
+      "nombre": "Platos fríos",
+      "platos": [
+        {
+          "id": "p09",
+          "nombre": "Choritos a la Chalaca",
+          "descripcion": "Mejillones cocidos, cebolla, tomate picado, granos de maiz y zumo de limón",
+          "precio": 14,
+          "disponible": true,
+          "alergenos": [
+            "moluscos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p10",
+          "nombre": "Leche de Tigre Afrodisiaco",
+          "descripcion": "Potente concentrado de pescado y lima con trocitos de pulpo, chicharrón bonito y choclo",
+          "precio": 15,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "pescado",
+            "apio",
+            "moluscos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "descripcion: \"chicharrón bonito\" — ¿quiso decir chicharrón de bonito?"
+          ]
+        },
+        {
+          "id": "p11",
+          "nombre": "Ceviche Clásico de Corvina",
+          "descripcion": "Marinado en leche de tigre, con cancha, choclo y boniato",
+          "precio": 18,
+          "disponible": true,
+          "alergenos": [
+            "pescado",
+            "apio"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p12",
+          "nombre": "Ceviche de Corvina al Ají Amarillo",
+          "descripcion": "Marinado en leche de tigre, con crema de ají amarillo",
+          "precio": 20,
+          "disponible": true,
+          "alergenos": [
+            "pescado",
+            "leche",
+            "apio"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p13",
+          "nombre": "Ceviche de Corvina en Crema de Rocoto",
+          "descripcion": "Marinado en leche de tigre, con rocoto",
+          "precio": 19,
+          "disponible": true,
+          "alergenos": [
+            "pescado",
+            "leche",
+            "apio"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p14",
+          "nombre": "Ceviche Mixto Especial",
+          "descripcion": "Corvina y mariscos marinados en leche de tigre especial",
+          "precio": 20,
+          "disponible": true,
+          "alergenos": [
+            "crustaceos",
+            "pescado",
+            "apio",
+            "moluscos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p15",
+          "nombre": "Ceviche Carretillero Chalaco",
+          "descripcion": "Pesca del día con chicharrón de corvina y anillos de calamares",
+          "precio": 24,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "pescado",
+            "apio",
+            "moluscos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        }
+      ]
+    },
+    {
+      "nombre": "Para picar",
+      "platos": [
+        {
+          "id": "p16",
+          "nombre": "Yuquitas Bravas",
+          "descripcion": "Yucas acompañadas en salsa de rocoto",
+          "precio": 8,
+          "disponible": true,
+          "alergenos": [
+            "leche"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p17",
+          "nombre": "Salchipapa",
+          "descripcion": "Patatas fritas con salchichas y variedad de cremas",
+          "precio": 9,
+          "disponible": true,
+          "alergenos": [
+            "huevo",
+            "mostaza"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        }
+      ]
+    },
+    {
+      "nombre": "Platos calientes",
+      "platos": [
+        {
+          "id": "p18",
+          "nombre": "Arroz Chaufa de Pollo o Carne",
+          "descripcion": "Arroz salteado al wok con salsa de soja",
+          "precio": 14,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "soja",
+            "sesamo"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p19",
+          "nombre": "Chaufa Marino",
+          "descripcion": "Mariscos salteados al wok con arroz y salsa de soja",
+          "precio": 17,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "crustaceos",
+            "huevo",
+            "soja",
+            "sesamo",
+            "moluscos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p20",
+          "nombre": "Arroz con Mariscos",
+          "descripcion": "Arroz cremoso de mariscos con guisantes y pimientos",
+          "precio": 18,
+          "disponible": true,
+          "alergenos": [
+            "crustaceos",
+            "pescado",
+            "leche",
+            "moluscos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p21",
+          "nombre": "Jalea de Pescado",
+          "descripcion": "Trozos de pescado marinado y fritos con yucas crocantes y su crema",
+          "precio": 17,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "pescado"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p22",
+          "nombre": "Jalea Mixta",
+          "descripcion": "Pescados y mariscos marinados y fritos con yuca crocante y su crema",
+          "precio": 19,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "crustaceos",
+            "huevo",
+            "pescado",
+            "moluscos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p23",
+          "nombre": "Lomo Saltado",
+          "descripcion": "Trozos de ternera salteadas al wok con salsa de soja, patatas artesanales y arroz blanco",
+          "precio": 18,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "soja"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p24",
+          "nombre": "Lomo a lo Pobre",
+          "descripcion": "Lomo saltados + huevo, platano frito",
+          "precio": 20,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "soja"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "descripcion: \"Lomo saltados\" parece errata de \"Lomo saltado\""
+          ]
+        },
+        {
+          "id": "p25",
+          "nombre": "Ají de Gallina",
+          "descripcion": "Pollo desmenuzado en salsa ají amarillo y parmesano con patatas y arroz blanco",
+          "precio": 17,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "leche",
+            "frutos_cascara"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p26",
+          "nombre": "Tacu Tacu de Frijoles con Seco Limeño",
+          "descripcion": "Tortilla de arroz y alubias con guiso de ternera a base de cilandro",
+          "precio": 18,
+          "disponible": true,
+          "alergenos": [
+            "gluten"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "descripcion: \"cilandro\" parece errata de \"cilantro\""
+          ]
+        },
+        {
+          "id": "p27",
+          "nombre": "Chupe Marino",
+          "descripcion": "Concentrado de pescado, mariscos con reducción de ajíes peruanos, arroz, leche y huevo",
+          "precio": 20,
+          "disponible": true,
+          "alergenos": [
+            "crustaceos",
+            "huevo",
+            "pescado",
+            "leche",
+            "moluscos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p28",
+          "nombre": "Parihuela",
+          "descripcion": "Concentrado de pescado y mariscos con reducción de ajíes peruanos",
+          "precio": 20,
+          "disponible": true,
+          "alergenos": [
+            "crustaceos",
+            "pescado",
+            "moluscos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p29",
+          "nombre": "Aeropuerto",
+          "descripcion": "Arroz y fideo frito en sala de soja y verduras orientales",
+          "precio": 16,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "soja",
+            "sesamo"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "descripcion: \"sala de soja\" parece errata de \"salsa de soja\""
+          ]
+        },
+        {
+          "id": "p30",
+          "nombre": "Tallarín Saltado Criollo de Pollo o Carne",
+          "descripcion": "Trozos de carne salteados al wok con salsa de soja, cebolla y tomate",
+          "precio": 16,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "soja"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p31",
+          "nombre": "Tallarín Saltado de Mariscos",
+          "descripcion": "Concentrado de pescado y mariscos con reducción de ajíes peruanos",
+          "precio": 18,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "crustaceos",
+            "huevo",
+            "soja",
+            "moluscos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "descripcion: es idéntica a la de Parihuela; probablemente copiada por error"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Opción vegana",
+      "platos": [
+        {
+          "id": "p32",
+          "nombre": "Causa Vegetariana",
+          "descripcion": "Puré de patata con ají amarillo y verduras de la estación al wok",
+          "precio": 12,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "soja"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p33",
+          "nombre": "Ceviche de Champiñones",
+          "descripcion": "Champiñones marinados en leche de tigre vegetariano con ají amarillo",
+          "precio": 17,
+          "disponible": true,
+          "alergenos": [
+            "apio"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p34",
+          "nombre": "Wok de Verduras",
+          "descripcion": "Verduras de la estación con arroz y salsa de soja",
+          "precio": 14,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "soja"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        }
+      ]
+    },
+    {
+      "nombre": "Postres",
+      "platos": [
+        {
+          "id": "p35",
+          "nombre": "Cheescake de Maracuyá",
+          "descripcion": null,
+          "precio": 6,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "leche"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "nombre: \"Cheescake\" parece errata de \"Cheesecake\""
+          ]
+        },
+        {
+          "id": "p36",
+          "nombre": "Tarta de Chocolate",
+          "descripcion": null,
+          "precio": 6,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "leche"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p37",
+          "nombre": "Tres Leches",
+          "descripcion": null,
+          "precio": 6,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "leche"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p38",
+          "nombre": "Pye de Limón",
+          "descripcion": null,
+          "precio": 6,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "huevo",
+            "leche"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "nombre: \"Pye\" — ¿\"Pie de limón\"?"
+          ]
+        },
+        {
+          "id": "p39",
+          "nombre": "Flan de Dulce de Leche",
+          "descripcion": null,
+          "precio": 6,
+          "disponible": true,
+          "alergenos": [
+            "huevo",
+            "leche"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        }
+      ]
+    },
+    {
+      "nombre": "Sin alcohol",
+      "platos": [
+        {
+          "id": "p40",
+          "nombre": "Chicha Morada",
+          "descripcion": null,
+          "precio": 3,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p41",
+          "nombre": "Jarra de Chicha Morada",
+          "descripcion": null,
+          "precio": 10,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p42",
+          "nombre": "Refresco de Maracuyá",
+          "descripcion": null,
+          "precio": 3,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p43",
+          "nombre": "Jarra de Refresco de Maracuyá",
+          "descripcion": null,
+          "precio": 10,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p44",
+          "nombre": "Limonada c/. Jengibre y Menta",
+          "descripcion": null,
+          "precio": 3.5,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p45",
+          "nombre": "Refrescos (Coca cola, fanta, nestea)",
+          "descripcion": null,
+          "precio": 3,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p46",
+          "nombre": "Agua 500 ml",
+          "descripcion": null,
+          "precio": 2,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p47",
+          "nombre": "Agua con gas Vichy Catalan",
+          "descripcion": null,
+          "precio": 2.5,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        }
+      ]
+    },
+    {
+      "nombre": "Cervezas",
+      "platos": [
+        {
+          "id": "p48",
+          "nombre": "Pilsen",
+          "descripcion": null,
+          "precio": 4,
+          "disponible": true,
+          "alergenos": [
+            "gluten"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p49",
+          "nombre": "Cusqueña",
+          "descripcion": null,
+          "precio": 3.8,
+          "disponible": true,
+          "alergenos": [
+            "gluten"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p50",
+          "nombre": "Estrella Galicia",
+          "descripcion": null,
+          "precio": 3,
+          "disponible": true,
+          "alergenos": [
+            "gluten"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p51",
+          "nombre": "Sin Alcohol",
+          "descripcion": null,
+          "precio": 3,
+          "disponible": true,
+          "alergenos": [
+            "gluten"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "nombre: no indica la marca de la cerveza sin alcohol"
+          ]
+        },
+        {
+          "id": "p52",
+          "nombre": "Copa Magna",
+          "descripcion": null,
+          "precio": 2.5,
+          "disponible": true,
+          "alergenos": [
+            "gluten"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p53",
+          "nombre": "Jarra",
+          "descripcion": null,
+          "precio": 4.5,
+          "disponible": true,
+          "alergenos": [
+            "gluten"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "nombre: no indica de qué cerveza es la jarra"
+          ]
+        },
+        {
+          "id": "p54",
+          "nombre": "Copa Clara",
+          "descripcion": null,
+          "precio": 2.5,
+          "disponible": true,
+          "alergenos": [
+            "gluten"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p55",
+          "nombre": "Jarra Clara",
+          "descripcion": null,
+          "precio": 4.5,
+          "disponible": true,
+          "alergenos": [
+            "gluten"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p56",
+          "nombre": "Corona",
+          "descripcion": null,
+          "precio": 3.5,
+          "disponible": true,
+          "alergenos": [
+            "gluten"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p57",
+          "nombre": "Heineken",
+          "descripcion": null,
+          "precio": 3,
+          "disponible": true,
+          "alergenos": [
+            "gluten"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        }
+      ]
+    },
+    {
+      "nombre": "Con alcohol",
+      "platos": [
+        {
+          "id": "p58",
+          "nombre": "Pisco Sour Clásico",
+          "descripcion": null,
+          "precio": 8,
+          "disponible": true,
+          "alergenos": [
+            "huevo"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p59",
+          "nombre": "Maracuyá Sour",
+          "descripcion": null,
+          "precio": 8.5,
+          "disponible": true,
+          "alergenos": [
+            "huevo"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p60",
+          "nombre": "Chicha Sour",
+          "descripcion": null,
+          "precio": 8.5,
+          "disponible": true,
+          "alergenos": [
+            "huevo"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p61",
+          "nombre": "Chilcano Clásico",
+          "descripcion": null,
+          "precio": 8,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p62",
+          "nombre": "Chilcano de Maracuyá",
+          "descripcion": null,
+          "precio": 8.5,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p63",
+          "nombre": "Piña Colada",
+          "descripcion": "Mangaroca, malibú y secreto de lacasa.",
+          "precio": 8,
+          "disponible": true,
+          "alergenos": [
+            "leche"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "descripcion: \"lacasa\" parece errata de \"la casa\""
+          ]
+        },
+        {
+          "id": "p64",
+          "nombre": "Gin Tonic",
+          "descripcion": "Precio desde 7,00 €",
+          "precio": 7,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "precio: la carta dice \"desde\"; varía según la ginebra"
+          ]
+        },
+        {
+          "id": "p65",
+          "nombre": "Mojitos",
+          "descripcion": "Precio desde 7,00 €",
+          "precio": 7,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "precio: la carta dice \"desde\"; varía según el sabor"
+          ]
+        },
+        {
+          "id": "p66",
+          "nombre": "Margarita",
+          "descripcion": "Tequila y cointreau",
+          "precio": 8,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p67",
+          "nombre": "San Francisco",
+          "descripcion": "Zumos, vodka y grosella",
+          "precio": 8,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p68",
+          "nombre": "Caipiriña",
+          "descripcion": "Cachaza, lima",
+          "precio": 8,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p69",
+          "nombre": "Daiquiri Frossen",
+          "descripcion": "Ron, fruta de la pasión o fresa",
+          "precio": 8,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "nombre: \"Frossen\" parece errata de \"Frozen\""
+          ]
+        },
+        {
+          "id": "p70",
+          "nombre": "Inti Exótico",
+          "descripcion": "Pisco, ginebra, ron, vodka, tequila",
+          "precio": 9,
+          "disponible": true,
+          "alergenos": [],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p71",
+          "nombre": "Michelada Inti",
+          "descripcion": null,
+          "precio": 4,
+          "disponible": true,
+          "alergenos": [
+            "gluten",
+            "pescado"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": [
+            "precio: 4,00 € es bajo frente al resto de cócteles; confirmar"
+          ]
+        },
+        {
+          "id": "p72",
+          "nombre": "Aperol Spritz",
+          "descripcion": null,
+          "precio": 8,
+          "disponible": true,
+          "alergenos": [
+            "sulfitos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        }
+      ]
+    },
+    {
+      "nombre": "Vino",
+      "platos": [
+        {
+          "id": "p73",
+          "nombre": "De la Casa (botella)",
+          "descripcion": null,
+          "precio": 12.5,
+          "disponible": true,
+          "alergenos": [
+            "sulfitos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p74",
+          "nombre": "Verdejo (Campus Tauro) (botella)",
+          "descripcion": null,
+          "precio": 14.5,
+          "disponible": true,
+          "alergenos": [
+            "sulfitos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p75",
+          "nombre": "Rioja Fos (botella)",
+          "descripcion": null,
+          "precio": 15.9,
+          "disponible": true,
+          "alergenos": [
+            "sulfitos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p76",
+          "nombre": "De la Casa (copa)",
+          "descripcion": null,
+          "precio": 3,
+          "disponible": true,
+          "alergenos": [
+            "sulfitos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p77",
+          "nombre": "Verdejo (Campus Tauro) (copa)",
+          "descripcion": null,
+          "precio": 3.5,
+          "disponible": true,
+          "alergenos": [
+            "sulfitos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p78",
+          "nombre": "Rioja Fos (copa)",
+          "descripcion": null,
+          "precio": 3.8,
+          "disponible": true,
+          "alergenos": [
+            "sulfitos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        },
+        {
+          "id": "p79",
+          "nombre": "Vermut",
+          "descripcion": null,
+          "precio": 3.8,
+          "disponible": true,
+          "alergenos": [
+            "sulfitos"
+          ],
+          "alergenos_confirmados": false,
+          "dudoso": []
+        }
+      ]
+    }
+  ],
+  "version": 1,
+  "estado": "borrador"
+}

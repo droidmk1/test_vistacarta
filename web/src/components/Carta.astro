@@ -22,6 +22,7 @@ import iResena from 'lucide-static/icons/star.svg?raw';
 import iPin from 'lucide-static/icons/map-pin.svg?raw';
 import iClock from 'lucide-static/icons/clock.svg?raw';
 import iPhone from 'lucide-static/icons/phone.svg?raw';
+import iCalendar from 'lucide-static/icons/calendar-check.svg?raw';
 import { ALERGENOS, ALERGENO } from '../alergenos.js';
 
 const { menu } = Astro.props;
@@ -96,7 +97,9 @@ const wa = redes.whatsapp?.numero
   ? `https://wa.me/${String(redes.whatsapp.numero).replace(/\D/g, '')}${redes.whatsapp.mensaje ? `?text=${encodeURIComponent(redes.whatsapp.mensaje)}` : ''}`
   : null;
 const acciones = [
-  wa && { href: wa, icono: iWhatsapp, corto: 'Reservar', largo: 'Reserva por WhatsApp' },
+  redes.reservas_url
+    ? { href: redes.reservas_url, icono: iCalendar, corto: 'Reservar', largo: 'Reservar mesa' }
+    : wa && { href: wa, icono: iWhatsapp, corto: 'Reservar', largo: 'Reserva por WhatsApp' },
   redes.instagram && { href: redes.instagram, icono: iInstagram, corto: 'Instagram', largo: 'Síguenos en Instagram' },
   redes.google_resenas && { href: redes.google_resenas, icono: iResena, corto: 'Reseñas', largo: 'Deja tu reseña en Google' },
 ].filter(Boolean);
