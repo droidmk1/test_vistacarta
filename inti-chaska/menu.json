@@ -17,7 +17,9 @@
     },
     "moneda": "EUR",
     "idiomas": [
-      "es"
+      "es",
+      "en",
+      "ca"
     ]
   },
   "fuente": "inti_chaska.pdf (2 páginas, Canva, con capa de texto; transcrito con pdftotext y verificado contra la imagen)",
@@ -38,7 +40,15 @@
             "leche"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "descripcion": "Boiled potatoes with yellow chilli (ají amarillo) cream"
+            },
+            "ca": {
+              "descripcion": "Patates bullides amb crema d’ají groc"
+            }
+          }
         },
         {
           "id": "p02",
@@ -51,7 +61,17 @@
             "pescado"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Causa Festival",
+              "descripcion": "Three kinds of causa: Limeña, acevichada and olive"
+            },
+            "ca": {
+              "nombre": "Festival de causes",
+              "descripcion": "Tres tipus de causa: limenya, acevitxada i d’olives"
+            }
+          }
         },
         {
           "id": "p03",
@@ -63,7 +83,15 @@
             "huevo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "descripcion": "Mashed potato filled with chicken and avocado"
+            },
+            "ca": {
+              "descripcion": "Puré de patata farcit de pollastre i alvocat"
+            }
+          }
         },
         {
           "id": "p04",
@@ -76,7 +104,17 @@
             "pescado"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Tuna Causa",
+              "descripcion": "Mashed potato with yellow chilli and lime"
+            },
+            "ca": {
+              "nombre": "Causa de tonyina",
+              "descripcion": "Puré de patata amb ají groc i llima"
+            }
+          }
         },
         {
           "id": "p05",
@@ -90,7 +128,15 @@
             "pescado"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "descripcion": "Mashed potato with battered fried fish pieces"
+            },
+            "ca": {
+              "descripcion": "Puré de patata amb trossos de peix arrebossat i fregit"
+            }
+          }
         },
         {
           "id": "p06",
@@ -104,7 +150,15 @@
             "apio"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "descripcion": "Mashed potato with fish cubes marinated in leche de tigre"
+            },
+            "ca": {
+              "descripcion": "Puré de patata amb daus de peix marinats en llet de tigre"
+            }
+          }
         },
         {
           "id": "p07",
@@ -118,7 +172,17 @@
             "huevo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Crispy Causa",
+              "descripcion": "Panko-fried mashed potato with sautéed prawns and pink sauce"
+            },
+            "ca": {
+              "nombre": "Causa cruixent",
+              "descripcion": "Puré de patata fregit amb panko, gambes saltejades i salsa rosa"
+            }
+          }
         },
         {
           "id": "p08",
@@ -132,9 +196,27 @@
             "leche"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Beef Heart Anticuchos",
+              "descripcion": "With potato, Peruvian corn and huancaína cream"
+            },
+            "ca": {
+              "nombre": "Anticuchos de cor",
+              "descripcion": "Amb patata, blat de moro peruà i crema huancaína"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Starters"
+        },
+        "ca": {
+          "nombre": "Entrants"
+        }
+      }
     },
     {
       "nombre": "Platos fríos",
@@ -149,7 +231,17 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chalaca-style Mussels",
+              "descripcion": "Cooked mussels with onion, chopped tomato, corn kernels and lemon juice"
+            },
+            "ca": {
+              "nombre": "Musclos a la chalaca",
+              "descripcion": "Musclos cuits, ceba, tomàquet picat, grans de blat de moro i suc de llimona"
+            }
+          }
         },
         {
           "id": "p10",
@@ -166,7 +258,17 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "descripcion: \"chicharrón bonito\" — ¿quiso decir chicharrón de bonito?"
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "nombre": "Aphrodisiac Leche de Tigre",
+              "descripcion": "Rich fish and lime broth with octopus, fried bonito and Peruvian corn"
+            },
+            "ca": {
+              "nombre": "Llet de tigre afrodisíaca",
+              "descripcion": "Concentrat de peix i llima amb pop, bonítol fregit i blat de moro"
+            }
+          }
         },
         {
           "id": "p11",
@@ -179,7 +281,17 @@
             "apio"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Classic Sea Bass Ceviche",
+              "descripcion": "Marinated in leche de tigre, with toasted corn, Peruvian corn and sweet potato"
+            },
+            "ca": {
+              "nombre": "Ceviche clàssic de corvina",
+              "descripcion": "Marinat en llet de tigre, amb blat de moro torrat, blat de moro i moniato"
+            }
+          }
         },
         {
           "id": "p12",
@@ -193,7 +305,17 @@
             "apio"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Sea Bass Ceviche with Yellow Chilli",
+              "descripcion": "Marinated in leche de tigre, with yellow chilli cream"
+            },
+            "ca": {
+              "nombre": "Ceviche de corvina a l’ají groc",
+              "descripcion": "Marinat en llet de tigre, amb crema d’ají groc"
+            }
+          }
         },
         {
           "id": "p13",
@@ -207,7 +329,17 @@
             "apio"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Sea Bass Ceviche in Rocoto Cream",
+              "descripcion": "Marinated in leche de tigre, with rocoto pepper"
+            },
+            "ca": {
+              "nombre": "Ceviche de corvina en crema de rocoto",
+              "descripcion": "Marinat en llet de tigre, amb rocoto"
+            }
+          }
         },
         {
           "id": "p14",
@@ -222,7 +354,17 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Special Mixed Ceviche",
+              "descripcion": "Sea bass and seafood marinated in special leche de tigre"
+            },
+            "ca": {
+              "nombre": "Ceviche mixt especial",
+              "descripcion": "Corvina i marisc marinats en llet de tigre especial"
+            }
+          }
         },
         {
           "id": "p15",
@@ -237,9 +379,25 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "descripcion": "Catch of the day with fried sea bass and squid rings"
+            },
+            "ca": {
+              "descripcion": "Peix del dia amb corvina fregida i anelles de calamar"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Cold dishes"
+        },
+        "ca": {
+          "nombre": "Plats freds"
+        }
+      }
     },
     {
       "nombre": "Para picar",
@@ -254,7 +412,17 @@
             "leche"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Spicy Cassava Fries",
+              "descripcion": "Cassava with rocoto sauce"
+            },
+            "ca": {
+              "nombre": "Iuca brava",
+              "descripcion": "Iuca amb salsa de rocoto"
+            }
+          }
         },
         {
           "id": "p17",
@@ -267,9 +435,25 @@
             "mostaza"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "descripcion": "French fries with sausages and assorted sauces"
+            },
+            "ca": {
+              "descripcion": "Patates fregides amb salsitxes i varietat de salses"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "To share"
+        },
+        "ca": {
+          "nombre": "Per picar"
+        }
+      }
     },
     {
       "nombre": "Platos calientes",
@@ -287,7 +471,17 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken or Beef Chaufa Fried Rice",
+              "descripcion": "Wok-fried rice with soy sauce"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa de pollastre o vedella",
+              "descripcion": "Arròs saltejat al wok amb salsa de soja"
+            }
+          }
         },
         {
           "id": "p19",
@@ -304,7 +498,17 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Seafood Chaufa",
+              "descripcion": "Wok-fried seafood with rice and soy sauce"
+            },
+            "ca": {
+              "nombre": "Chaufa de marisc",
+              "descripcion": "Marisc saltejat al wok amb arròs i salsa de soja"
+            }
+          }
         },
         {
           "id": "p20",
@@ -319,7 +523,17 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Seafood Rice",
+              "descripcion": "Creamy seafood rice with peas and peppers"
+            },
+            "ca": {
+              "nombre": "Arròs amb marisc",
+              "descripcion": "Arròs cremós de marisc amb pèsols i pebrots"
+            }
+          }
         },
         {
           "id": "p21",
@@ -333,7 +547,17 @@
             "pescado"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Fried Fish Jalea",
+              "descripcion": "Marinated fried fish pieces with crispy cassava and sauce"
+            },
+            "ca": {
+              "nombre": "Jalea de peix",
+              "descripcion": "Trossos de peix marinat i fregit amb iuca cruixent i la seva salsa"
+            }
+          }
         },
         {
           "id": "p22",
@@ -349,7 +573,17 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Mixed Jalea",
+              "descripcion": "Marinated fried fish and seafood with crispy cassava and sauce"
+            },
+            "ca": {
+              "nombre": "Jalea mixta",
+              "descripcion": "Peix i marisc marinats i fregits amb iuca cruixent i la seva salsa"
+            }
+          }
         },
         {
           "id": "p23",
@@ -362,7 +596,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "descripcion": "Wok-sautéed beef with soy sauce, homemade fries and white rice"
+            },
+            "ca": {
+              "descripcion": "Vedella saltejada al wok amb salsa de soja, patates artesanes i arròs blanc"
+            }
+          }
         },
         {
           "id": "p24",
@@ -378,7 +620,15 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "descripcion: \"Lomo saltados\" parece errata de \"Lomo saltado\""
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "descripcion": "Lomo saltado with fried egg and fried plantain"
+            },
+            "ca": {
+              "descripcion": "Lomo saltado amb ou ferrat i plàtan fregit"
+            }
+          }
         },
         {
           "id": "p25",
@@ -393,7 +643,15 @@
             "frutos_cascara"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "descripcion": "Shredded chicken in yellow chilli and parmesan sauce, with potatoes and white rice"
+            },
+            "ca": {
+              "descripcion": "Pollastre esfilagarsat en salsa d’ají groc i parmesà, amb patates i arròs blanc"
+            }
+          }
         },
         {
           "id": "p26",
@@ -407,7 +665,17 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "descripcion: \"cilandro\" parece errata de \"cilantro\""
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "nombre": "Bean Tacu Tacu with Seco Limeño",
+              "descripcion": "Rice and bean cake with coriander beef stew"
+            },
+            "ca": {
+              "nombre": "Tacu tacu de mongetes amb seco limeño",
+              "descripcion": "Truita d’arròs i mongetes amb guisat de vedella al coriandre"
+            }
+          }
         },
         {
           "id": "p27",
@@ -423,7 +691,17 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Seafood Chupe",
+              "descripcion": "Fish and seafood broth with Peruvian chillies, rice, milk and egg"
+            },
+            "ca": {
+              "nombre": "Chupe de marisc",
+              "descripcion": "Concentrat de peix i marisc amb ajís peruans, arròs, llet i ou"
+            }
+          }
         },
         {
           "id": "p28",
@@ -437,7 +715,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "descripcion": "Fish and seafood broth with a reduction of Peruvian chillies"
+            },
+            "ca": {
+              "descripcion": "Concentrat de peix i marisc amb reducció d’ajís peruans"
+            }
+          }
         },
         {
           "id": "p29",
@@ -454,7 +740,15 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "descripcion: \"sala de soja\" parece errata de \"salsa de soja\""
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "descripcion": "Fried rice and noodles with soy sauce and oriental vegetables"
+            },
+            "ca": {
+              "descripcion": "Arròs i fideus fregits amb salsa de soja i verdures orientals"
+            }
+          }
         },
         {
           "id": "p30",
@@ -468,7 +762,17 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Criollo Stir-fried Noodles with Chicken or Beef",
+              "descripcion": "Wok-sautéed meat with soy sauce, onion and tomato"
+            },
+            "ca": {
+              "nombre": "Tallarines saltejats criolls de pollastre o vedella",
+              "descripcion": "Carn saltejada al wok amb salsa de soja, ceba i tomàquet"
+            }
+          }
         },
         {
           "id": "p31",
@@ -486,9 +790,27 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "descripcion: es idéntica a la de Parihuela; probablemente copiada por error"
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "nombre": "Stir-fried Seafood Noodles",
+              "descripcion": "Fish and seafood broth with a reduction of Peruvian chillies"
+            },
+            "ca": {
+              "nombre": "Tallarines saltejats de marisc",
+              "descripcion": "Concentrat de peix i marisc amb reducció d’ajís peruans"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Hot dishes"
+        },
+        "ca": {
+          "nombre": "Plats calents"
+        }
+      }
     },
     {
       "nombre": "Opción vegana",
@@ -504,7 +826,17 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegetarian Causa",
+              "descripcion": "Mashed potato with yellow chilli and wok-sautéed seasonal vegetables"
+            },
+            "ca": {
+              "nombre": "Causa vegetariana",
+              "descripcion": "Puré de patata amb ají groc i verdures de temporada al wok"
+            }
+          }
         },
         {
           "id": "p33",
@@ -516,7 +848,17 @@
             "apio"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Mushroom Ceviche",
+              "descripcion": "Mushrooms marinated in vegetarian leche de tigre with yellow chilli"
+            },
+            "ca": {
+              "nombre": "Ceviche de xampinyons",
+              "descripcion": "Xampinyons marinats en llet de tigre vegetariana amb ají groc"
+            }
+          }
         },
         {
           "id": "p34",
@@ -529,9 +871,27 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegetable Wok",
+              "descripcion": "Seasonal vegetables with rice and soy sauce"
+            },
+            "ca": {
+              "nombre": "Wok de verdures",
+              "descripcion": "Verdures de temporada amb arròs i salsa de soja"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Vegan options"
+        },
+        "ca": {
+          "nombre": "Opció vegana"
+        }
+      }
     },
     {
       "nombre": "Postres",
@@ -550,7 +910,15 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "nombre: \"Cheescake\" parece errata de \"Cheesecake\""
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "nombre": "Passion Fruit Cheesecake"
+            },
+            "ca": {
+              "nombre": "Pastís de formatge de fruita de la passió"
+            }
+          }
         },
         {
           "id": "p36",
@@ -564,7 +932,15 @@
             "leche"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chocolate Cake"
+            },
+            "ca": {
+              "nombre": "Pastís de xocolata"
+            }
+          }
         },
         {
           "id": "p37",
@@ -578,7 +954,15 @@
             "leche"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Tres Leches Cake"
+            },
+            "ca": {
+              "nombre": "Pastís tres llets"
+            }
+          }
         },
         {
           "id": "p38",
@@ -594,7 +978,15 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "nombre: \"Pye\" — ¿\"Pie de limón\"?"
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "nombre": "Lemon Pie"
+            },
+            "ca": {
+              "nombre": "Pastís de llimona"
+            }
+          }
         },
         {
           "id": "p39",
@@ -607,9 +999,25 @@
             "leche"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Dulce de Leche Flan"
+            },
+            "ca": {
+              "nombre": "Flam de dolç de llet"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Desserts"
+        },
+        "ca": {
+          "nombre": "Postres"
+        }
+      }
     },
     {
       "nombre": "Sin alcohol",
@@ -622,7 +1030,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicha Morada (purple corn drink)"
+            },
+            "ca": {
+              "nombre": "Chicha morada (beguda de blat de moro morat)"
+            }
+          }
         },
         {
           "id": "p41",
@@ -632,7 +1048,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicha Morada Jug"
+            },
+            "ca": {
+              "nombre": "Gerra de chicha morada"
+            }
+          }
         },
         {
           "id": "p42",
@@ -642,7 +1066,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Passion Fruit Juice"
+            },
+            "ca": {
+              "nombre": "Refresc de fruita de la passió"
+            }
+          }
         },
         {
           "id": "p43",
@@ -652,7 +1084,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Passion Fruit Juice Jug"
+            },
+            "ca": {
+              "nombre": "Gerra de refresc de fruita de la passió"
+            }
+          }
         },
         {
           "id": "p44",
@@ -662,7 +1102,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Lemonade with Ginger and Mint"
+            },
+            "ca": {
+              "nombre": "Llimonada amb gingebre i menta"
+            }
+          }
         },
         {
           "id": "p45",
@@ -672,7 +1120,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Soft Drinks (Coca-Cola, Fanta, Nestea)"
+            },
+            "ca": {
+              "nombre": "Refrescos (Coca-Cola, Fanta, Nestea)"
+            }
+          }
         },
         {
           "id": "p46",
@@ -682,7 +1138,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Water 500 ml"
+            },
+            "ca": {
+              "nombre": "Aigua 500 ml"
+            }
+          }
         },
         {
           "id": "p47",
@@ -692,9 +1156,25 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vichy Catalan Sparkling Water"
+            },
+            "ca": {
+              "nombre": "Aigua amb gas Vichy Catalan"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Soft drinks"
+        },
+        "ca": {
+          "nombre": "Sense alcohol"
+        }
+      }
     },
     {
       "nombre": "Cervezas",
@@ -747,7 +1227,15 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "nombre: no indica la marca de la cerveza sin alcohol"
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "nombre": "Alcohol-free"
+            },
+            "ca": {
+              "nombre": "Sense alcohol"
+            }
+          }
         },
         {
           "id": "p52",
@@ -773,7 +1261,15 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "nombre: no indica de qué cerveza es la jarra"
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "nombre": "Pitcher"
+            },
+            "ca": {
+              "nombre": "Gerra"
+            }
+          }
         },
         {
           "id": "p54",
@@ -785,7 +1281,15 @@
             "gluten"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Shandy (glass)"
+            },
+            "ca": {
+              "nombre": "Clara (copa)"
+            }
+          }
         },
         {
           "id": "p55",
@@ -797,7 +1301,15 @@
             "gluten"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Shandy (pitcher)"
+            },
+            "ca": {
+              "nombre": "Clara (gerra)"
+            }
+          }
         },
         {
           "id": "p56",
@@ -823,7 +1335,15 @@
           "alergenos_confirmados": false,
           "dudoso": []
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Beers"
+        },
+        "ca": {
+          "nombre": "Cerveses"
+        }
+      }
     },
     {
       "nombre": "Con alcohol",
@@ -838,7 +1358,15 @@
             "huevo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Classic Pisco Sour"
+            },
+            "ca": {
+              "nombre": "Pisco sour clàssic"
+            }
+          }
         },
         {
           "id": "p59",
@@ -850,7 +1378,15 @@
             "huevo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Passion Fruit Sour"
+            },
+            "ca": {
+              "nombre": "Sour de fruita de la passió"
+            }
+          }
         },
         {
           "id": "p60",
@@ -872,7 +1408,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Classic Chilcano"
+            },
+            "ca": {
+              "nombre": "Chilcano clàssic"
+            }
+          }
         },
         {
           "id": "p62",
@@ -882,7 +1426,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Passion Fruit Chilcano"
+            },
+            "ca": {
+              "nombre": "Chilcano de fruita de la passió"
+            }
+          }
         },
         {
           "id": "p63",
@@ -896,7 +1448,15 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "descripcion: \"lacasa\" parece errata de \"la casa\""
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "descripcion": "Mangaroca, Malibu and house secret."
+            },
+            "ca": {
+              "descripcion": "Mangaroca, Malibu i secret de la casa."
+            }
+          }
         },
         {
           "id": "p64",
@@ -908,7 +1468,15 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "precio: la carta dice \"desde\"; varía según la ginebra"
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "descripcion": "From €7.00"
+            },
+            "ca": {
+              "descripcion": "Des de 7,00 €"
+            }
+          }
         },
         {
           "id": "p65",
@@ -920,7 +1488,15 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "precio: la carta dice \"desde\"; varía según el sabor"
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "descripcion": "From €7.00"
+            },
+            "ca": {
+              "descripcion": "Des de 7,00 €"
+            }
+          }
         },
         {
           "id": "p66",
@@ -930,7 +1506,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "descripcion": "Tequila and Cointreau"
+            },
+            "ca": {
+              "descripcion": "Tequila i Cointreau"
+            }
+          }
         },
         {
           "id": "p67",
@@ -940,7 +1524,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "descripcion": "Juices, vodka and redcurrant"
+            },
+            "ca": {
+              "descripcion": "Sucs, vodka i grosella"
+            }
+          }
         },
         {
           "id": "p68",
@@ -950,7 +1542,17 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Caipirinha",
+              "descripcion": "Cachaça, lime"
+            },
+            "ca": {
+              "nombre": "Caipirinha",
+              "descripcion": "Cachaça, llima"
+            }
+          }
         },
         {
           "id": "p69",
@@ -962,7 +1564,17 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "nombre: \"Frossen\" parece errata de \"Frozen\""
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "nombre": "Frozen Daiquiri",
+              "descripcion": "Rum, passion fruit or strawberry"
+            },
+            "ca": {
+              "nombre": "Daiquiri frozen",
+              "descripcion": "Rom, fruita de la passió o maduixa"
+            }
+          }
         },
         {
           "id": "p70",
@@ -972,7 +1584,17 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Inti Exotic",
+              "descripcion": "Pisco, gin, rum, vodka, tequila"
+            },
+            "ca": {
+              "nombre": "Inti Exòtic",
+              "descripcion": "Pisco, ginebra, rom, vodka, tequila"
+            }
+          }
         },
         {
           "id": "p71",
@@ -1001,7 +1623,15 @@
           "alergenos_confirmados": false,
           "dudoso": []
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Cocktails"
+        },
+        "ca": {
+          "nombre": "Còctels"
+        }
+      }
     },
     {
       "nombre": "Vino",
@@ -1016,7 +1646,15 @@
             "sulfitos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "House Wine (bottle)"
+            },
+            "ca": {
+              "nombre": "Vi de la casa (ampolla)"
+            }
+          }
         },
         {
           "id": "p74",
@@ -1028,7 +1666,15 @@
             "sulfitos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Verdejo (Campus Tauro) (bottle)"
+            },
+            "ca": {
+              "nombre": "Verdejo (Campus Tauro) (ampolla)"
+            }
+          }
         },
         {
           "id": "p75",
@@ -1040,7 +1686,15 @@
             "sulfitos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Rioja Fos (bottle)"
+            },
+            "ca": {
+              "nombre": "Rioja Fos (ampolla)"
+            }
+          }
         },
         {
           "id": "p76",
@@ -1052,7 +1706,15 @@
             "sulfitos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "House Wine (glass)"
+            },
+            "ca": {
+              "nombre": "Vi de la casa (copa)"
+            }
+          }
         },
         {
           "id": "p77",
@@ -1064,7 +1726,15 @@
             "sulfitos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Verdejo (Campus Tauro) (glass)"
+            },
+            "ca": {
+              "nombre": "Verdejo (Campus Tauro) (copa)"
+            }
+          }
         },
         {
           "id": "p78",
@@ -1076,7 +1746,15 @@
             "sulfitos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Rioja Fos (glass)"
+            },
+            "ca": {
+              "nombre": "Rioja Fos (copa)"
+            }
+          }
         },
         {
           "id": "p79",
@@ -1088,11 +1766,28 @@
             "sulfitos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vermouth"
+            },
+            "ca": {
+              "nombre": "Vermut"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Wine"
+        },
+        "ca": {
+          "nombre": "Vi"
+        }
+      }
     }
   ],
   "version": 1,
-  "estado": "borrador"
+  "estado": "borrador",
+  "traducciones_nota": "Inglés y catalán traducidos por IA; pendientes de revisión por el restaurante."
 }

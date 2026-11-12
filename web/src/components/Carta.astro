@@ -23,13 +23,23 @@ import iPin from 'lucide-static/icons/map-pin.svg?raw';
 import iClock from 'lucide-static/icons/clock.svg?raw';
 import iPhone from 'lucide-static/icons/phone.svg?raw';
 import iCalendar from 'lucide-static/icons/calendar-check.svg?raw';
-import { ALERGENOS, ALERGENO } from '../alergenos.js';
+import { ALERGENOS, ALERGENO, nombreAlergeno } from '../alergenos.js';
+import { IDIOMAS, UI, BANDERAS } from '../i18n.js';
 
-const { menu } = Astro.props;
+const { menu, lang: langProp } = Astro.props;
 const R = menu.restaurante;
 
-const eur = new Intl.NumberFormat('es-ES', { style: 'currency', currency: R.moneda || 'EUR' });
-const fmt = (valor) => eur.format(valor);
+// Idioma: el primero de restaurante.idiomas es el de la carta original (ruta /<slug>/).
+const idiomas = (R.idiomas?.length ? R.idiomas : ['es']).filter((l) => IDIOMAS[l]);
+const original = idiomas[0] ?? 'es';
+const lang = langProp ?? original;
+const t = UI[lang] ?? UI.es;
+const traducida = lang !== original;
+// Texto traducido de un objeto de la carta (categoría o plato), o el original si falta.
+const tr = (obj, campo) => (traducida && obj.traducciones?.[lang]?.[campo]) || obj[campo];
+
+const moneda = new Intl.NumberFormat(IDIOMAS[lang].locale, { style: 'currency', currency: R.moneda || 'EUR' });
+const fmt = (valor) => moneda.format(valor);
 const slugify = (texto) =>
   texto
     .normalize('NFD')
@@ -37,14 +47,19 @@ const slugify = (texto) =>
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '');
-const lista = (xs) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} y ${xs.at(-1)}` : (xs[0] ?? ''));
-const capital = (t) => t.charAt(0).toUpperCase() + t.slice(1);
+const lista = (xs) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} ${t.y} ${xs.at(-1)}` : (xs[0] ?? ''));
+const capital = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
 // Rutas de archivos propios (logo, fotos): relativas a web/public o URL completa.
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const recurso = (u) => (!u ? null : /^https?:\/\//.test(u) ? u : base + u.replace(/^\//, ''));
+const urlIdioma = (l) => `${base}${R.slug}/${l === original ? '' : l + '/'}`;
 
-const categorias = menu.categorias.map((categoria) => ({ ...categoria, id: slugify(categoria.nombre) }));
+const categorias = menu.categorias.map((categoria) => ({
+  ...categoria,
+  id: slugify(categoria.nombre),
+  titulo: tr(categoria, 'nombre'),
+}));
 const total = categorias.reduce((n, c) => n + c.platos.length, 0);
 const platos = categorias.flatMap((c) => c.platos);
 
@@ -57,7 +72,7 @@ const descuento = (p) => Math.round((1 - p.precio / p.precio_anterior) * 100);
 const dia = menu.menu_del_dia ?? null;
 const diaIncluye = dia?.incluye?.length ? capital(lista(dia.incluye)) : '';
 const diaHorarioCorto = dia?.horario ? dia.horario.replace(/^De lunes a viernes, de /, 'L–V ').replace(/ h$/, '') : '';
-const sugerencias = menu.categorias.slice(0, 3).map((c) => c.nombre.toLowerCase());
+const sugerencias = categorias.slice(0, 3).map((c) => c.titulo.toLowerCase());
 const [nombreCorto, ...resto] = R.nombre.split(' ');
 const apellido = resto.join(' ');
 const borrador = menu.estado === 'borrador';
@@ -98,10 +113,10 @@ const wa = redes.whatsapp?.numero
   : null;
 const acciones = [
   redes.reservas_url
-    ? { href: redes.reservas_url, icono: iCalendar, corto: 'Reservar', largo: 'Reservar mesa' }
-    : wa && { href: wa, icono: iWhatsapp, corto: 'Reservar', largo: 'Reserva por WhatsApp' },
-  redes.instagram && { href: redes.instagram, icono: iInstagram, corto: 'Instagram', largo: 'Síguenos en Instagram' },
-  redes.google_resenas && { href: redes.google_resenas, icono: iResena, corto: 'Reseñas', largo: 'Deja tu reseña en Google' },
+    ? { href: redes.reservas_url, icono: iCalendar, corto: t.reservar, largo: t.reservarMesa }
+    : wa && { href: wa, icono: iWhatsapp, corto: t.reservar, largo: t.reservarWa },
+  redes.instagram && { href: redes.instagram, icono: iInstagram, corto: 'Instagram', largo: t.seguirIg },
+  redes.google_resenas && { href: redes.google_resenas, icono: iResena, corto: t.resenas, largo: t.dejarResena },
 ].filter(Boolean);
 const sociales = [
   redes.instagram && { href: redes.instagram, icono: iInstagram, nombre: 'Instagram' },
@@ -113,20 +128,39 @@ const horarios = [contacto.horario].flat().filter(Boolean);
 const mapa = contacto.mapa_url ?? (contacto.direccion ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${R.nombre}, ${contacto.direccion}`)}` : null);
 const hayPropuestos = platos.some((p) => p.alergenos?.length && !p.alergenos_confirmados);
 const anio = new Date().getFullYear();
+
+// Textos que usa el script del navegador.
+const textosJs = JSON.stringify({ plato: t.plato, platos: t.platos, con: t.con, locale: IDIOMAS[lang].locale });
 ---
 <!doctype html>
-<html lang="es" style={tema}>
+<html lang={lang} style={tema}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content={primario} />
-    <title>{R.nombre} · Carta</title>
-    <meta name="description" content={`Carta de ${R.nombre}: ${total} platos.`} />
+    <title>{R.nombre} · {t.titulo}</title>
+    <meta name="description" content={t.descripcion(R.nombre, total)} />
+    {idiomas.length > 1 && idiomas.map((l) => <link rel="alternate" hreflang={l} href={urlIdioma(l)} />)}
     <script is:inline>document.documentElement.classList.add('js');</script>
   </head>
-  <body id="inicio">
+  <body id="inicio" data-textos={textosJs}>
+    {idiomas.length > 1 && (
+      <nav class="idiomas" aria-label={t.idioma}>
+        <ul>
+          {idiomas.map((l) => (
+            <li>
+              <a href={urlIdioma(l)} hreflang={l} lang={l} aria-current={l === lang ? 'true' : undefined} aria-label={IDIOMAS[l].nombre}>
+                <span class="bandera" set:html={BANDERAS[l]} />
+                <span>{IDIOMAS[l].corto}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )}
+
     <header class="appbar">
-      <a class="brand" href="#inicio" aria-label={`${R.nombre}, ir al inicio`}>
+      <a class="brand" href="#inicio" aria-label={`${R.nombre}, ${t.irInicio}`}>
         {logo ? (
           <span class="brand-logo"><img src={logo} alt="" height="36" /></span>
         ) : (
@@ -139,22 +173,22 @@ const anio = new Date().getFullYear();
       </a>
       <button class="search-btn" type="button" data-open-search aria-controls="buscador" aria-expanded="false">
         <span class="ico" set:html={iSearch} />
-        <span>Buscar</span>
+        <span>{t.buscar}</span>
       </button>
     </header>
 
     <div class="searchbar" id="buscador" hidden>
       <label class="search-field">
         <span class="ico" set:html={iSearch} />
-        <span class="sr-only">Buscar en la carta</span>
-        <input id="q" type="search" placeholder="Busca un plato" autocomplete="off" enterkeyhint="search" />
+        <span class="sr-only">{t.buscarEnCarta}</span>
+        <input id="q" type="search" placeholder={t.buscarPlaceholder} autocomplete="off" enterkeyhint="search" />
       </label>
-      <button class="text-btn" type="button" data-close-search>Cancelar</button>
+      <button class="text-btn" type="button" data-close-search>{t.cancelar}</button>
     </div>
 
     <main>
       {acciones.length > 0 && (
-        <nav class="acciones" aria-label="Reservas y redes">
+        <nav class="acciones" aria-label={t.reservasRedes}>
           {acciones.map((a) => (
             <a class="accion" href={a.href} target="_blank" rel="noopener" aria-label={a.largo}>
               <span class="ico" set:html={a.icono} />
@@ -171,20 +205,20 @@ const anio = new Date().getFullYear();
             <h2 id="dia-titulo">{dia.nombre}</h2>
             {diaIncluye && <p class="dia-meta">{diaIncluye}</p>}
             {(diaHorarioCorto || dia.excluye) && (
-              <p class="dia-meta">{[diaHorarioCorto && `${diaHorarioCorto} h`, dia.excluye && `No incluye ${dia.excluye.toLowerCase()}`].filter(Boolean).join(' · ')}</p>
+              <p class="dia-meta">{[diaHorarioCorto && `${diaHorarioCorto} h`, dia.excluye && `${t.noIncluye} ${dia.excluye.toLowerCase()}`].filter(Boolean).join(' · ')}</p>
             )}
           </div>
           <p class="dia-price">{fmt(dia.precio)}</p>
         </div>
         <details class="dia-detalle">
           <summary>
-            <span class="cta-abrir">Ver los platos del menú</span>
-            <span class="cta-cerrar">Ocultar los platos</span>
+            <span class="cta-abrir">{t.verMenu}</span>
+            <span class="cta-cerrar">{t.ocultarMenu}</span>
             <span class="ico" set:html={iChevron} />
           </summary>
           <div class="dia-cols">
             <div>
-              <h3>Entrantes</h3>
+              <h3>{t.entrantes}</h3>
               <ul>
                 {(dia.entrantes ?? []).map((plato) => (
                   <li>
@@ -195,14 +229,14 @@ const anio = new Date().getFullYear();
               </ul>
             </div>
             <div>
-              <h3>Segundos</h3>
+              <h3>{t.segundos}</h3>
               <ul>
                 {(dia.segundos ?? []).map((nombre) => <li><span>{nombre}</span></li>)}
               </ul>
             </div>
             {dia.suplementos_bebida?.length > 0 && (
             <div>
-              <h3>Bebida con suplemento</h3>
+              <h3>{t.bebidaSuplemento}</h3>
               <ul>
                 {dia.suplementos_bebida.map((bebida) => (
                   <li>
@@ -220,12 +254,12 @@ const anio = new Date().getFullYear();
 
       {destacados.length > 0 && (
         <section class="favoritos" aria-labelledby="fav-t">
-          <h2 class="bloque-t" id="fav-t">Nuestros favoritos</h2>
+          <h2 class="bloque-t" id="fav-t">{t.favoritos}</h2>
           <ul class="fav-list">
             {destacados.map((p) => (
               <li class:list={['fav', { 'has-foto': p.foto_url }]}>
                 {p.foto_url && <img class="fav-foto" src={recurso(p.foto_url)} alt="" loading="lazy" />}
-                <span class="fav-name">{p.nombre}</span>
+                <span class="fav-name">{tr(p, 'nombre')}</span>
                 <span class="fav-price">
                   {enOferta(p) && <s>{fmt(p.precio_anterior)}</s>}
                   {fmt(p.precio)}
@@ -237,34 +271,34 @@ const anio = new Date().getFullYear();
       )}
 
       <div id="carta" class="ancla" aria-hidden="true"></div>
-      <nav class="cats" aria-label="Categorías de la carta">
+      <nav class="cats" aria-label={t.categorias}>
         <ul>
           {categorias.map((categoria, i) => (
             <li>
-              <a class="cat" href={`#${categoria.id}`} data-cat={categoria.id} aria-current={i === 0 ? 'true' : undefined}>{categoria.nombre}</a>
+              <a class="cat" href={`#${categoria.id}`} data-cat={categoria.id} aria-current={i === 0 ? 'true' : undefined}>{categoria.titulo}</a>
             </li>
           ))}
         </ul>
       </nav>
 
       <div class="toolbar">
-        <p class="count" id="contador" aria-live="polite">{total} platos</p>
+        <p class="count" id="contador" aria-live="polite">{total} {t.platos}</p>
         <div class="toolbar-actions">
           {hayFotos && (
-            <div class="view-toggle" role="group" aria-label="Vista">
+            <div class="view-toggle" role="group" aria-label={t.vista}>
               <button type="button" class="seg" data-view="list" aria-pressed="true">
                 <span class="ico" set:html={iList} />
-                <span class="seg-text">Lista</span>
+                <span class="seg-text">{t.lista}</span>
               </button>
               <button type="button" class="seg" data-view="grid" aria-pressed="false">
                 <span class="ico" set:html={iGrid} />
-                <span class="seg-text">Fotos</span>
+                <span class="seg-text">{t.fotos}</span>
               </button>
             </div>
           )}
           <button type="button" class="sort" id="abrir-orden" aria-haspopup="dialog" aria-controls="hoja-orden">
             <span class="ico" set:html={iSort} />
-            <span>Ordenar</span>
+            <span>{t.ordenar}</span>
             <span class="sort-current" id="orden-actual" hidden></span>
           </button>
         </div>
@@ -273,31 +307,32 @@ const anio = new Date().getFullYear();
       <div class="sections" data-view="list">
         {categorias.map((categoria) => (
           <section class="cat-section" id={categoria.id} data-cat={categoria.id} aria-labelledby={`${categoria.id}-t`}>
-            <h2 class="cat-title" id={`${categoria.id}-t`}>{categoria.nombre}</h2>
+            <h2 class="cat-title" id={`${categoria.id}-t`}>{categoria.titulo}</h2>
             <ul class="dishes">
               {categoria.platos.map((plato, i) => (
                 <li
                   class:list={['dish', { 'is-off': !plato.disponible, 'has-foto': plato.foto_url }]}
-                  data-name={plato.nombre}
+                  data-name={tr(plato, 'nombre')}
+                  data-alt={traducida ? plato.nombre : undefined}
                   data-price={plato.precio}
                   data-order={i}
                 >
                   {plato.foto_url && <img class="dish-foto" src={recurso(plato.foto_url)} alt="" loading="lazy" />}
                   <div class="dish-body">
                     <div class="dish-head">
-                      <h3 class="dish-name">{plato.nombre}</h3>
+                      <h3 class="dish-name">{tr(plato, 'nombre')}</h3>
                       <p class="dish-price">
-                        {enOferta(plato) && <s class="precio-antes"><span class="sr-only">Antes </span>{fmt(plato.precio_anterior)}</s>}
+                        {enOferta(plato) && <s class="precio-antes"><span class="sr-only">{t.antes} </span>{fmt(plato.precio_anterior)}</s>}
                         <span>{fmt(plato.precio)}</span>
                       </p>
                     </div>
-                    {plato.descripcion && <p class="dish-desc">{plato.descripcion}</p>}
+                    {tr(plato, 'descripcion') && <p class="dish-desc">{tr(plato, 'descripcion')}</p>}
                     {plato.alergenos?.length > 0 && (
                       <div class="alg">
-                        <span class="alg-label">{plato.alergenos_confirmados ? 'Alérgenos' : 'Posibles alérgenos'}</span>
+                        <span class="alg-label">{plato.alergenos_confirmados ? t.alergenos : t.posibles}</span>
                         <ul class="alg-list">
                           {plato.alergenos.filter((id) => ALERGENO[id]).map((id) => (
-                            <li><span class="ico" set:html={ALERGENO[id].icono} />{ALERGENO[id].nombre}</li>
+                            <li><span class="ico" set:html={ALERGENO[id].icono} />{nombreAlergeno(ALERGENO[id], lang)}</li>
                           ))}
                         </ul>
                       </div>
@@ -305,7 +340,7 @@ const anio = new Date().getFullYear();
                     {(!plato.disponible || enOferta(plato)) && (
                       <p class="dish-badges">
                         {enOferta(plato) && <span class="badge badge-oferta">-{descuento(plato)}%</span>}
-                        {!plato.disponible && <span class="badge">Agotado</span>}
+                        {!plato.disponible && <span class="badge">{t.agotado}</span>}
                       </p>
                     )}
                   </div>
@@ -316,40 +351,46 @@ const anio = new Date().getFullYear();
         ))}
 
         <div class="empty" id="vacio" hidden>
-          <p class="empty-title">No hay platos con «<span id="vacio-q"></span>»</p>
-          <p>Prueba con otra palabra, como {lista(sugerencias.map((t) => `«${t}»`)).replace(/ y («[^»]*»)$/, ' o $1')}.</p>
-          <button class="text-btn" type="button" data-clear-search>Ver toda la carta</button>
+          <p class="empty-title">{t.sinResultados} «<span id="vacio-q"></span>»</p>
+          <p>{t.prueba} {lista(sugerencias.map((s) => `«${s}»`)).replace(new RegExp(` ${t.y} («[^»]*»)$`), ` ${t.o} $1`)}.</p>
+          <button class="text-btn" type="button" data-clear-search>{t.verTodo}</button>
         </div>
       </div>
 
       <section class="info" id="info" aria-labelledby="info-t">
-        <h2 class="bloque-t" id="info-t">Información</h2>
+        <h2 class="bloque-t" id="info-t">{t.informacion}</h2>
         <dl>
           {dia?.horario && (
             <div>
               <dt>{dia.nombre}</dt>
-              <dd>{dia.horario}.{dia.excluye && ` No incluye ${dia.excluye.toLowerCase()}.`}</dd>
+              <dd>{dia.horario}.{dia.excluye && ` ${t.noIncluye} ${dia.excluye.toLowerCase()}.`}</dd>
             </div>
           )}
           <div>
-            <dt>Alergias e intolerancias</dt>
+            <dt>{t.alergias}</dt>
             <dd>
-              {hayPropuestos && 'Los «posibles alérgenos» son una propuesta que el restaurante aún no ha confirmado. '}
-              Que un plato no muestre alérgenos no significa que no los tenga. Si tienes alguna alergia, consulta siempre al personal antes de pedir.
+              {hayPropuestos && `${t.propuestos} `}
+              {t.ausencia}
             </dd>
           </div>
+          {traducida && t.traduccionTexto && (
+            <div>
+              <dt>{t.traduccion}</dt>
+              <dd>{t.traduccionTexto}</dd>
+            </div>
+          )}
           {borrador && (
             <div>
-              <dt>Carta en revisión</dt>
-              <dd>Esta es una vista previa. Los nombres y precios pueden cambiar hasta que el restaurante la apruebe.</dd>
+              <dt>{t.revision}</dt>
+              <dd>{t.revisionTexto}</dd>
             </div>
           )}
         </dl>
 
-        <h3 class="leyenda-t" id="alergenos">Los 14 alérgenos</h3>
+        <h3 class="leyenda-t" id="alergenos">{t.los14}</h3>
         <ul class="leyenda">
           {ALERGENOS.map((a) => (
-            <li><span class="ico" set:html={a.icono} />{a.nombre}</li>
+            <li><span class="ico" set:html={a.icono} />{nombreAlergeno(a, lang)}</li>
           ))}
         </ul>
       </section>
@@ -365,7 +406,7 @@ const anio = new Date().getFullYear();
 
         {sociales.length > 0 && (
           <div class="pie-redes">
-            <p>Síguenos en nuestras redes</p>
+            <p>{t.siguenos}</p>
             <ul>
               {sociales.map((s) => (
                 <li>
@@ -392,7 +433,7 @@ const anio = new Date().getFullYear();
 
         {redes.google_resenas && (
           <a class="pie-resena" href={redes.google_resenas} target="_blank" rel="noopener">
-            <span class="ico" set:html={iResena} />Déjanos tu reseña en Google
+            <span class="ico" set:html={iResena} />{t.dejarResenaPie}
           </a>
         )}
 
@@ -403,19 +444,19 @@ const anio = new Date().getFullYear();
     <dialog class="sheet" id="hoja-orden" aria-labelledby="hoja-orden-t">
       <form method="dialog" class="sheet-inner">
         <div class="sheet-head">
-          <h2 id="hoja-orden-t">Ordenar por</h2>
-          <button class="icon-btn sheet-close" value="cancel" formnovalidate aria-label="Cerrar">
+          <h2 id="hoja-orden-t">{t.ordenarPor}</h2>
+          <button class="icon-btn sheet-close" value="cancel" formnovalidate aria-label={t.cerrar}>
             <span class="ico" set:html={iX} />
           </button>
         </div>
         <fieldset class="sheet-options">
-          <legend class="sr-only">Orden de los platos</legend>
+          <legend class="sr-only">{t.ordenPlatos}</legend>
           {[
-            ['carta', 'Recomendado'],
-            ['precio-asc', 'Menor a mayor precio'],
-            ['precio-desc', 'Mayor a menor precio'],
-            ['nombre', 'A – Z'],
-            ['nombre-desc', 'Z – A'],
+            ['carta', t.recomendado],
+            ['precio-asc', t.precioAsc],
+            ['precio-desc', t.precioDesc],
+            ['nombre', t.az],
+            ['nombre-desc', t.za],
           ].map(([valor, texto], i) => (
             <label class="sheet-option">
               <input type="radio" name="orden" value={valor} checked={i === 0} />
@@ -424,17 +465,18 @@ const anio = new Date().getFullYear();
             </label>
           ))}
         </fieldset>
-        <button class="sheet-apply" value="apply">Mostrar resultados</button>
+        <button class="sheet-apply" value="apply">{t.mostrar}</button>
       </form>
     </dialog>
 
-    <nav class="bottomnav" aria-label="Navegación principal">
-      <a href="#carta" data-nav="carta" aria-current="page"><span class="ico" set:html={iCarta} /><span>Carta</span></a>
-      <button type="button" data-open-search data-nav="buscar"><span class="ico" set:html={iSearch} /><span>Buscar</span></button>
-      <a href="#info" data-nav="info"><span class="ico" set:html={iInfo} /><span>Info</span></a>
+    <nav class="bottomnav" aria-label={t.navegacion}>
+      <a href="#carta" data-nav="carta" aria-current="page"><span class="ico" set:html={iCarta} /><span>{t.carta}</span></a>
+      <button type="button" data-open-search data-nav="buscar"><span class="ico" set:html={iSearch} /><span>{t.buscar}</span></button>
+      <a href="#info" data-nav="info"><span class="ico" set:html={iInfo} /><span>{t.info}</span></a>
     </nav>
 
     <script>
+      const T = JSON.parse(document.body.dataset.textos);
       const root = document.querySelector('.sections');
       const sections = [...document.querySelectorAll('.cat-section')];
       const chips = [...document.querySelectorAll('.cat')];
@@ -457,7 +499,7 @@ const anio = new Date().getFullYear();
         get: (k) => { try { return localStorage.getItem(k); } catch { return null; } },
         set: (k, v) => { try { localStorage.setItem(k, v); } catch {} },
       };
-      const plural = (n) => (n === 1 ? '1 plato' : `${n} platos`);
+      const plural = (n) => `${n} ${n === 1 ? T.plato : T.platos}`;
 
       let active = sections[0]?.dataset.cat;
       let query = '';
@@ -476,7 +518,8 @@ const anio = new Date().getFullYear();
           const dishes = [...sec.querySelectorAll('.dish')];
           let shown = 0;
           for (const d of dishes) {
-            const hit = q ? norm(d.dataset.name).includes(q) : sec.dataset.cat === active;
+            // En una carta traducida también se busca por el nombre original.
+            const hit = q ? norm(d.dataset.name + ' ' + (d.dataset.alt || '')).includes(q) : sec.dataset.cat === active;
             d.hidden = !hit;
             if (hit) shown++;
           }
@@ -491,7 +534,7 @@ const anio = new Date().getFullYear();
         empty.hidden = visible > 0;
         emptyQ.textContent = query.trim();
         const name = chips.find((c) => c.dataset.cat === active)?.textContent;
-        counter.textContent = q ? `${plural(visible)} con «${query.trim()}»` : `${name} · ${plural(visible)}`;
+        counter.textContent = q ? `${plural(visible)} ${T.con} «${query.trim()}»` : `${name} · ${plural(visible)}`;
       }
 
       function sortDishes(mode) {
@@ -502,8 +545,8 @@ const anio = new Date().getFullYear();
             carta: (a, b) => a.dataset.order - b.dataset.order,
             'precio-asc': (a, b) => a.dataset.price - b.dataset.price || a.dataset.order - b.dataset.order,
             'precio-desc': (a, b) => b.dataset.price - a.dataset.price || a.dataset.order - b.dataset.order,
-            nombre: (a, b) => a.dataset.name.localeCompare(b.dataset.name, 'es'),
-            'nombre-desc': (a, b) => b.dataset.name.localeCompare(a.dataset.name, 'es'),
+            nombre: (a, b) => a.dataset.name.localeCompare(b.dataset.name, T.locale),
+            'nombre-desc': (a, b) => b.dataset.name.localeCompare(a.dataset.name, T.locale),
           }[mode];
           items.sort(by).forEach((el) => list.appendChild(el));
         }

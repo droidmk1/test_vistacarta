@@ -1,0 +1,18 @@
+---
+// Versiones traducidas: /<slug>/<idioma>/ para cada idioma extra de restaurante.idiomas.
+// El primer idioma de la lista es el de la carta original y vive en /<slug>/.
+import Carta from '../../components/Carta.astro';
+
+export function getStaticPaths() {
+  const menus = import.meta.glob('../../../../*/menu.json', { eager: true, import: 'default' });
+  return Object.values(menus).flatMap((menu) =>
+    (menu.restaurante.idiomas ?? []).slice(1).map((lang) => ({
+      params: { slug: menu.restaurante.slug, lang },
+      props: { menu, lang },
+    })),
+  );
+}
+
+const { menu, lang } = Astro.props;
+---
+<Carta menu={menu} lang={lang} />

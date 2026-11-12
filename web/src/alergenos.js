@@ -16,20 +16,23 @@ import flower from 'lucide-static/icons/flower.svg?raw';
 import snail from 'lucide-static/icons/snail.svg?raw';
 
 export const ALERGENOS = [
-  { id: 'gluten', nombre: 'Gluten', icono: wheat },
-  { id: 'crustaceos', nombre: 'Crustáceos', icono: shell },
-  { id: 'huevo', nombre: 'Huevo', icono: egg },
-  { id: 'pescado', nombre: 'Pescado', icono: fish },
-  { id: 'cacahuetes', nombre: 'Cacahuetes', icono: nut },
-  { id: 'soja', nombre: 'Soja', icono: bean },
-  { id: 'leche', nombre: 'Leche', icono: milk },
-  { id: 'frutos_cascara', nombre: 'Frutos de cáscara', icono: squirrel },
-  { id: 'apio', nombre: 'Apio', icono: leafy },
-  { id: 'mostaza', nombre: 'Mostaza', icono: flower2 },
-  { id: 'sesamo', nombre: 'Sésamo', icono: grip },
-  { id: 'sulfitos', nombre: 'Sulfitos', icono: wine },
-  { id: 'altramuces', nombre: 'Altramuces', icono: flower },
-  { id: 'moluscos', nombre: 'Moluscos', icono: snail },
+  { id: 'gluten', nombre: 'Gluten', en: 'Gluten', ca: 'Gluten', icono: wheat },
+  { id: 'crustaceos', nombre: 'Crustáceos', en: 'Crustaceans', ca: 'Crustacis', icono: shell },
+  { id: 'huevo', nombre: 'Huevo', en: 'Egg', ca: 'Ou', icono: egg },
+  { id: 'pescado', nombre: 'Pescado', en: 'Fish', ca: 'Peix', icono: fish },
+  { id: 'cacahuetes', nombre: 'Cacahuetes', en: 'Peanuts', ca: 'Cacauets', icono: nut },
+  { id: 'soja', nombre: 'Soja', en: 'Soy', ca: 'Soja', icono: bean },
+  { id: 'leche', nombre: 'Leche', en: 'Milk', ca: 'Llet', icono: milk },
+  { id: 'frutos_cascara', nombre: 'Frutos de cáscara', en: 'Tree nuts', ca: 'Fruits de closca', icono: squirrel },
+  { id: 'apio', nombre: 'Apio', en: 'Celery', ca: 'Api', icono: leafy },
+  { id: 'mostaza', nombre: 'Mostaza', en: 'Mustard', ca: 'Mostassa', icono: flower2 },
+  { id: 'sesamo', nombre: 'Sésamo', en: 'Sesame', ca: 'Sèsam', icono: grip },
+  { id: 'sulfitos', nombre: 'Sulfitos', en: 'Sulphites', ca: 'Sulfits', icono: wine },
+  { id: 'altramuces', nombre: 'Altramuces', en: 'Lupin', ca: 'Tramussos', icono: flower },
+  { id: 'moluscos', nombre: 'Moluscos', en: 'Molluscs', ca: 'Mol·luscs', icono: snail },
 ];
+
+// Nombre del alérgeno en el idioma pedido (español si falta).
+export const nombreAlergeno = (a, lang) => (lang && lang !== 'es' && a[lang]) || a.nombre;
 
 export const ALERGENO = Object.fromEntries(ALERGENOS.map((a) => [a.id, a]));

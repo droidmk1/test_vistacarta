@@ -1,0 +1,81 @@
+// Textos de la interfaz por idioma. El contenido de la carta se traduce en cada menu.json
+// (categoria.traducciones y plato.traducciones); si falta una traducción, se usa el español.
+
+export const IDIOMAS = {
+  es: { nombre: 'Español', corto: 'ES', locale: 'es-ES' },
+  en: { nombre: 'English', corto: 'EN', locale: 'en-GB' },
+  ca: { nombre: 'Català', corto: 'CA', locale: 'ca-ES' },
+};
+
+export const UI = {
+  es: {
+    carta: 'Carta', buscar: 'Buscar', buscarPlaceholder: 'Busca un plato', buscarEnCarta: 'Buscar en la carta', cancelar: 'Cancelar',
+    irInicio: 'ir al inicio', idioma: 'Idioma',
+    reservasRedes: 'Reservas y redes', reservar: 'Reservar', reservarMesa: 'Reservar mesa', reservarWa: 'Reserva por WhatsApp',
+    seguirIg: 'Síguenos en Instagram', resenas: 'Reseñas', dejarResena: 'Deja tu reseña en Google', dejarResenaPie: 'Déjanos tu reseña en Google',
+    verMenu: 'Ver los platos del menú', ocultarMenu: 'Ocultar los platos', entrantes: 'Entrantes', segundos: 'Segundos', bebidaSuplemento: 'Bebida con suplemento',
+    noIncluye: 'No incluye', favoritos: 'Nuestros favoritos', categorias: 'Categorías de la carta',
+    vista: 'Vista', lista: 'Lista', fotos: 'Fotos', ordenar: 'Ordenar', ordenarPor: 'Ordenar por', ordenPlatos: 'Orden de los platos',
+    recomendado: 'Recomendado', precioAsc: 'Menor a mayor precio', precioDesc: 'Mayor a menor precio', az: 'A – Z', za: 'Z – A',
+    mostrar: 'Mostrar resultados', cerrar: 'Cerrar',
+    plato: 'plato', platos: 'platos', con: 'con',
+    sinResultados: 'No hay platos con', prueba: 'Prueba con otra palabra, como', o: 'o', y: 'y', verTodo: 'Ver toda la carta',
+    antes: 'Antes', agotado: 'Agotado', alergenos: 'Alérgenos', posibles: 'Posibles alérgenos',
+    info: 'Info', informacion: 'Información', alergias: 'Alergias e intolerancias',
+    propuestos: 'Los «posibles alérgenos» son una propuesta que el restaurante aún no ha confirmado.',
+    ausencia: 'Que un plato no muestre alérgenos no significa que no los tenga. Si tienes alguna alergia, consulta siempre al personal antes de pedir.',
+    revision: 'Carta en revisión', revisionTexto: 'Esta es una vista previa. Los nombres y precios pueden cambiar hasta que el restaurante la apruebe.',
+    traduccion: 'Traducción', traduccionTexto: '',
+    los14: 'Los 14 alérgenos', siguenos: 'Síguenos en nuestras redes', navegacion: 'Navegación principal',
+    descripcion: (nombre, n) => `Carta de ${nombre}: ${n} platos.`, titulo: 'Carta',
+  },
+  en: {
+    carta: 'Menu', buscar: 'Search', buscarPlaceholder: 'Search for a dish', buscarEnCarta: 'Search the menu', cancelar: 'Cancel',
+    irInicio: 'go to top', idioma: 'Language',
+    reservasRedes: 'Bookings and social media', reservar: 'Book', reservarMesa: 'Book a table', reservarWa: 'Book via WhatsApp',
+    seguirIg: 'Follow us on Instagram', resenas: 'Reviews', dejarResena: 'Leave us a Google review', dejarResenaPie: 'Leave us a Google review',
+    verMenu: 'See the set menu dishes', ocultarMenu: 'Hide the dishes', entrantes: 'Starters', segundos: 'Mains', bebidaSuplemento: 'Drinks with supplement',
+    noIncluye: 'Not included', favoritos: 'Our favourites', categorias: 'Menu categories',
+    vista: 'View', lista: 'List', fotos: 'Photos', ordenar: 'Sort', ordenarPor: 'Sort by', ordenPlatos: 'Dish order',
+    recomendado: 'Recommended', precioAsc: 'Price: low to high', precioDesc: 'Price: high to low', az: 'A – Z', za: 'Z – A',
+    mostrar: 'Show results', cerrar: 'Close',
+    plato: 'dish', platos: 'dishes', con: 'for',
+    sinResultados: 'No dishes match', prueba: 'Try another word, such as', o: 'or', y: 'and', verTodo: 'See the whole menu',
+    antes: 'Was', agotado: 'Sold out', alergenos: 'Allergens', posibles: 'Possible allergens',
+    info: 'Info', informacion: 'Information', alergias: 'Allergies and intolerances',
+    propuestos: '“Possible allergens” are a suggestion that the restaurant has not confirmed yet.',
+    ausencia: 'A dish showing no allergens does not mean it has none. If you have an allergy, always ask the staff before ordering.',
+    revision: 'Menu under review', revisionTexto: 'This is a preview. Names and prices may change until the restaurant approves it.',
+    traduccion: 'Translation', traduccionTexto: 'This menu was translated automatically and is pending review by the restaurant.',
+    los14: 'The 14 allergens', siguenos: 'Follow us on social media', navegacion: 'Main navigation',
+    descripcion: (nombre, n) => `${nombre} menu: ${n} dishes.`, titulo: 'Menu',
+  },
+  ca: {
+    carta: 'Carta', buscar: 'Cercar', buscarPlaceholder: 'Cerca un plat', buscarEnCarta: 'Cerca a la carta', cancelar: 'Cancel·la',
+    irInicio: 'anar a l’inici', idioma: 'Idioma',
+    reservasRedes: 'Reserves i xarxes', reservar: 'Reservar', reservarMesa: 'Reserva taula', reservarWa: 'Reserva per WhatsApp',
+    seguirIg: 'Segueix-nos a Instagram', resenas: 'Ressenyes', dejarResena: 'Deixa’ns una ressenya a Google', dejarResenaPie: 'Deixa’ns una ressenya a Google',
+    verMenu: 'Veure els plats del menú', ocultarMenu: 'Amaga els plats', entrantes: 'Entrants', segundos: 'Segons', bebidaSuplemento: 'Begudes amb suplement',
+    noIncluye: 'No inclou', favoritos: 'Els nostres preferits', categorias: 'Categories de la carta',
+    vista: 'Vista', lista: 'Llista', fotos: 'Fotos', ordenar: 'Ordena', ordenarPor: 'Ordena per', ordenPlatos: 'Ordre dels plats',
+    recomendado: 'Recomanat', precioAsc: 'Preu: de menor a major', precioDesc: 'Preu: de major a menor', az: 'A – Z', za: 'Z – A',
+    mostrar: 'Mostra els resultats', cerrar: 'Tanca',
+    plato: 'plat', platos: 'plats', con: 'amb',
+    sinResultados: 'No hi ha plats amb', prueba: 'Prova amb una altra paraula, com', o: 'o', y: 'i', verTodo: 'Veure tota la carta',
+    antes: 'Abans', agotado: 'Esgotat', alergenos: 'Al·lèrgens', posibles: 'Possibles al·lèrgens',
+    info: 'Info', informacion: 'Informació', alergias: 'Al·lèrgies i intoleràncies',
+    propuestos: 'Els «possibles al·lèrgens» són una proposta que el restaurant encara no ha confirmat.',
+    ausencia: 'Que un plat no mostri al·lèrgens no vol dir que no en tingui. Si tens alguna al·lèrgia, consulta sempre el personal abans de demanar.',
+    revision: 'Carta en revisió', revisionTexto: 'Això és una vista prèvia. Els noms i els preus poden canviar fins que el restaurant l’aprovi.',
+    traduccion: 'Traducció', traduccionTexto: 'Aquesta carta s’ha traduït automàticament i està pendent de revisió pel restaurant.',
+    los14: 'Els 14 al·lèrgens', siguenos: 'Segueix-nos a les xarxes', navegacion: 'Navegació principal',
+    descripcion: (nombre, n) => `Carta de ${nombre}: ${n} plats.`, titulo: 'Carta',
+  },
+};
+
+// Banderas en SVG (los emoji de bandera no se ven en Windows).
+export const BANDERAS = {
+  es: '<svg viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="3" height="2" fill="#AA151B"/><rect y=".5" width="3" height="1" fill="#F1BF00"/></svg>',
+  ca: '<svg viewBox="0 0 9 6" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="9" height="6" fill="#FCDD09"/><g fill="#DA121A"><rect y=".6667" width="9" height=".6667"/><rect y="2" width="9" height=".6667"/><rect y="3.3333" width="9" height=".6667"/><rect y="4.6667" width="9" height=".6667"/></g></svg>',
+  en: '<svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><clipPath id="uk-t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>',
+};
