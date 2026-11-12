@@ -1,0 +1,16 @@
+---
+// Una página por restaurante: cada carpeta vistacarta/<carpeta>/menu.json
+// se publica en /<slug>/ (slug de menu.json). URL fija para el QR.
+import Carta from '../components/Carta.astro';
+
+export function getStaticPaths() {
+  const menus = import.meta.glob('../../../*/menu.json', { eager: true, import: 'default' });
+  return Object.values(menus).map((menu) => ({
+    params: { slug: menu.restaurante.slug },
+    props: { menu },
+  }));
+}
+
+const { menu } = Astro.props;
+---
+<Carta menu={menu} />

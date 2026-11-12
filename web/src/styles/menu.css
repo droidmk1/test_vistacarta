@@ -1,10 +1,16 @@
 :root {
   color-scheme: light;
   --red: #c8102e;
-  --red-deep: #a10c24;
-  --red-tint: #fbe9ec;
+  /* Colores de marca: Carta.astro los sobrescribe con los de menu.json. */
+  --on-red: #ffffff;
+  --red-text: #c8102e;
+  --red-deep: color-mix(in srgb, var(--red) 82%, black);
+  --red-tint: color-mix(in srgb, var(--red) 10%, white);
+  --red-soft: color-mix(in srgb, var(--red) 35%, white);
+  --red-glow: color-mix(in srgb, var(--red) 30%, transparent);
   --mustard: #f2b705;
-  --mustard-tint: #fff6d6;
+  --on-mustard: #1f1a17;
+  --mustard-tint: color-mix(in srgb, var(--mustard) 18%, white);
   --ink: #1f1a17;
   --ink-soft: #5c524c;
   --ground: #f5f2ef;
@@ -26,7 +32,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 72px;
-  scrollbar-color: var(--red) transparent;
+  scrollbar-color: var(--red-text) transparent;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -146,9 +152,10 @@ button {
   justify-content: space-between;
   gap: 12px;
   background: var(--red);
-  color: #fff;
-  padding: 10px 16px;
-  box-shadow: 0 2px 10px rgb(120 8 26 / 0.25);
+  color: var(--on-red);
+  padding: 8px 16px;
+  min-height: 60px;
+  box-shadow: 0 2px 10px var(--red-glow);
 }
 
 .brand {
@@ -165,7 +172,7 @@ button {
   height: 40px;
   border-radius: 50%;
   background: #fff;
-  color: var(--red);
+  color: var(--red-text);
   font-weight: 800;
   font-size: 1.25rem;
   box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 3.5px var(--red);
@@ -186,7 +193,8 @@ button {
 .brand-sub {
   font-size: 0.75rem;
   font-weight: 500;
-  color: #ffeef0;
+  color: var(--on-red);
+  opacity: 0.88;
 }
 
 .icon-btn {
@@ -199,7 +207,7 @@ button {
 }
 
 .icon-btn:hover {
-  background: rgb(255 255 255 / 0.14);
+  background: var(--ground);
 }
 
 .icon-btn .ico svg {
@@ -207,8 +215,51 @@ button {
   height: 22px;
 }
 
-.icon-btn:focus-visible {
-  outline-color: #fff;
+/* Buscar: icono con texto, más fácil de reconocer */
+.search-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 14px 0 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--on-red);
+  box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--on-red) 55%, transparent);
+  transition: background 0.2s var(--ease);
+}
+
+.search-btn:hover {
+  background: color-mix(in srgb, var(--on-red) 14%, transparent);
+}
+
+.search-btn:focus-visible {
+  outline-color: var(--on-red);
+}
+
+.search-btn .ico svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Logo del restaurante sobre una placa clara para que se lea sobre cualquier color */
+.brand-logo {
+  display: grid;
+  place-items: center;
+  height: 44px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgb(31 26 23 / 0.15);
+}
+
+.brand-logo img {
+  display: block;
+  height: 36px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
 }
 
 /* ---------- Buscador ---------- */
@@ -249,7 +300,7 @@ button {
   background: none;
   outline: none;
   font-size: 1rem;
-  caret-color: var(--red);
+  caret-color: var(--red-text);
 }
 
 .search-field:focus-within {
@@ -261,7 +312,7 @@ button {
 }
 
 .text-btn {
-  color: var(--red);
+  color: var(--red-text);
   font-weight: 700;
   padding: 10px 6px;
   border-radius: 8px;
@@ -294,8 +345,8 @@ main {
   margin: 12px 16px 0;
   background: var(--mustard);
   border-radius: var(--radius);
-  padding: 12px 16px 2px;
-  color: var(--ink);
+  padding: 12px 16px 14px;
+  color: var(--on-mustard);
 }
 
 .dia-head {
@@ -314,7 +365,7 @@ main {
 
 .dia-meta {
   font-size: 0.875rem;
-  color: #4a3b06;
+  color: color-mix(in srgb, var(--on-mustard) 82%, var(--mustard));
   margin-top: 2px;
 }
 
@@ -334,18 +385,48 @@ main {
 }
 
 .dia-detalle {
-  margin-top: 8px;
-  border-top: 1px solid rgb(31 26 23 / 0.18);
+  margin-top: 12px;
 }
 
+/* Botón con texto: deja claro que se puede desplegar */
 .dia-detalle summary {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  min-height: 44px;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 1rem;
   list-style: none;
+  box-shadow: 0 3px 10px rgb(31 26 23 / 0.2);
+  transition: transform 0.2s var(--ease);
+}
+
+.dia-detalle summary:hover {
+  transform: translateY(-1px);
+}
+
+.dia-detalle summary:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.dia-detalle .cta-cerrar,
+.dia-detalle[open] .cta-abrir {
+  display: none;
+}
+
+.dia-detalle[open] .cta-cerrar {
+  display: inline;
+}
+
+.dia-detalle[open] .dia-cols {
+  margin-top: 14px;
 }
 
 .dia-detalle summary::-webkit-details-marker {
@@ -378,7 +459,7 @@ main {
   gap: 12px;
   padding: 4px 0;
   font-size: 0.9375rem;
-  border-bottom: 1px dashed rgb(31 26 23 / 0.2);
+  border-bottom: 1px dashed color-mix(in srgb, var(--on-mustard) 25%, transparent);
 }
 
 .dia-cols .extra {
@@ -428,11 +509,11 @@ main {
   height: 60px;
   border-radius: 50%;
   background: var(--porcelain);
-  color: var(--red);
+  color: var(--red-text);
   box-shadow:
     inset 0 0 0 2px var(--line),
     inset 0 0 0 6px var(--porcelain),
-    inset 0 0 0 7.5px #e9b5bd,
+    inset 0 0 0 7.5px var(--red-soft),
     0 1px 3px rgb(31 26 23 / 0.08);
   transition: background 0.25s var(--ease), color 0.25s var(--ease), box-shadow 0.25s var(--ease), transform 0.25s var(--ease);
 }
@@ -458,15 +539,15 @@ main {
 
 .cat[aria-current='true'] .cat-plate {
   background: var(--red);
-  color: #fff;
+  color: var(--on-red);
   box-shadow:
     inset 0 0 0 3px var(--red),
-    inset 0 0 0 4.5px #ffd9de,
-    0 4px 12px rgb(200 16 46 / 0.3);
+    inset 0 0 0 4.5px var(--red-tint),
+    0 4px 12px var(--red-glow);
 }
 
 .cat[aria-current='true'] .cat-name {
-  color: var(--red);
+  color: var(--red-text);
   font-weight: 800;
 }
 
@@ -499,18 +580,28 @@ main {
 }
 
 .seg {
-  display: grid;
-  place-items: center;
-  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 40px;
   height: 40px;
+  padding: 0 10px;
+  font-weight: 700;
+  font-size: 0.875rem;
   border-radius: 10px;
   color: var(--ink-soft);
   transition: background 0.2s var(--ease), color 0.2s var(--ease);
 }
 
+.seg .ico svg {
+  width: 18px;
+  height: 18px;
+}
+
 .seg[aria-pressed='true'] {
   background: var(--red);
-  color: #fff;
+  color: var(--on-red);
 }
 
 .seg[aria-pressed='false']:hover {
@@ -545,7 +636,7 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: var(--red);
+  color: var(--red-text);
   font-weight: 700;
 }
 
@@ -555,7 +646,7 @@ main {
 }
 
 .sort.is-set .ico {
-  color: var(--red);
+  color: var(--red-text);
 }
 
 /* ---------- Hoja inferior "Ordenar por" ---------- */
@@ -653,12 +744,12 @@ main {
 }
 
 .sheet-option .check {
-  color: var(--red);
+  color: var(--red-text);
   visibility: hidden;
 }
 
 .sheet-option:has(input:checked) {
-  color: var(--red);
+  color: var(--red-text);
   font-weight: 700;
 }
 
@@ -680,10 +771,10 @@ main {
   margin: 20px auto 0;
   border-radius: 999px;
   background: var(--red);
-  color: #fff;
+  color: var(--on-red);
   font-weight: 800;
   font-size: 1rem;
-  box-shadow: 0 6px 16px rgb(200 16 46 / 0.3);
+  box-shadow: 0 6px 16px var(--red-glow);
   transition: background 0.2s var(--ease);
 }
 
@@ -691,8 +782,14 @@ main {
   background: var(--red-deep);
 }
 
-@media (max-width: 359px) {
+@media (max-width: 419px) {
   .toolbar-label {
+    display: none;
+  }
+}
+
+@media (max-width: 359px) {
+  .seg-text {
     display: none;
   }
 }
@@ -759,7 +856,7 @@ main {
   aspect-ratio: 1;
   border-radius: 50%;
   background: var(--porcelain);
-  color: var(--red);
+  color: var(--red-text);
   box-shadow:
     inset 0 0 0 3px var(--red),
     inset 0 0 0 7px var(--porcelain),
@@ -868,8 +965,60 @@ main {
   gap: 12px;
 }
 
-[data-view='list'] .dish-name {
+.dish-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+[data-view='list'] .dish-main {
   flex: 1;
+}
+
+/* Alérgenos del plato */
+.alg {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.alg-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.alg-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.alg-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px 2px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--ground);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.alg-propuesta .alg-chip {
+  border-style: dashed;
+  border-color: #b9aea6;
+  background: var(--card);
+}
+
+.alg-chip .ico svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2;
 }
 
 [data-view='list'] .dish-foot {
@@ -900,6 +1049,45 @@ main {
 
 .empty .text-btn {
   margin-top: 8px;
+}
+
+/* Reservas y redes */
+
+.acciones {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 8px;
+  margin: 12px 16px 0;
+}
+
+.accion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 48px;
+  padding: 0 8px;
+  border-radius: 12px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--ink);
+  transition: transform 0.2s var(--ease);
+}
+
+.accion .ico {
+  color: var(--red-text);
+}
+
+.accion .ico svg {
+  width: 20px;
+  height: 20px;
+}
+
+.accion:hover {
+  transform: translateY(-1px);
 }
 
 /* Información */
@@ -934,6 +1122,65 @@ main {
   max-width: 65ch;
 }
 
+.info-links {
+  display: grid;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.info-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  font-weight: 700;
+  color: var(--red-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.info-links .ico svg {
+  width: 18px;
+  height: 18px;
+}
+
+.leyenda-t {
+  margin: 24px 0 10px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.leyenda {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+  max-width: 720px;
+}
+
+.leyenda li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.leyenda .ico {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--card);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
+.leyenda .ico svg {
+  width: 18px;
+  height: 18px;
+}
+
 /* ---------- Navegación inferior ---------- */
 
 .bottomnav {
@@ -941,7 +1188,8 @@ main {
   inset: auto 0 0;
   z-index: 30;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
   align-items: end;
   height: calc(var(--nav-h) + env(safe-area-inset-bottom));
   padding: 0 4px env(safe-area-inset-bottom);
@@ -967,7 +1215,7 @@ main {
 
 .bottomnav > a:hover,
 .bottomnav > button:hover {
-  color: var(--red);
+  color: var(--red-text);
 }
 
 .bottomnav .ico svg {
@@ -981,7 +1229,7 @@ main {
 }
 
 .bn-main > span:last-child {
-  color: var(--red);
+  color: var(--red-text);
   font-weight: 800;
 }
 
@@ -993,8 +1241,8 @@ main {
   margin-top: -22px;
   border-radius: 50%;
   background: var(--red);
-  color: #fff;
-  box-shadow: 0 0 0 4px var(--card), 0 6px 14px rgb(200 16 46 / 0.35);
+  color: var(--on-red);
+  box-shadow: 0 0 0 4px var(--card), 0 6px 14px var(--red-glow);
   transition: transform 0.25s var(--ease);
 }
 
@@ -1028,7 +1276,7 @@ main {
   }
 
   .bottomnav {
-    grid-template-columns: repeat(5, minmax(0, 120px));
+    grid-auto-columns: minmax(0, 120px);
     justify-content: center;
   }
 }
@@ -1043,4 +1291,38 @@ main {
     transition: none !important;
     animation: none !important;
   }
+}
+
+/* ---------- Índice de cartas ---------- */
+
+.index-body {
+  padding-bottom: 32px;
+}
+
+.index-main {
+  max-width: 640px;
+  padding: 0 16px;
+}
+
+.index-title {
+  font-size: 1.375rem;
+  font-weight: 800;
+  margin: 20px 0 12px;
+}
+
+.index-list {
+  display: grid;
+  gap: 8px;
+}
+
+.index-item {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+}
+
+.index-item:hover .dish-name {
+  color: var(--red-text);
 }

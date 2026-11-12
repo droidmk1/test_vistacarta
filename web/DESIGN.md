@@ -1,6 +1,6 @@
 # Diseño: carta pública
 
-Sistema visual de la carta pública de Wantan (`web/src/pages/index.astro` y `web/src/styles/menu.css`). Sustituye al diseño anterior (lista con guía punteada). Referencia fijada por el usuario: `../referencias/estilo-web-referencia.png`.
+Sistema visual de la carta pública de Wantan (`web/src/components/Carta.astro`, una página por restaurante en `web/src/pages/[slug].astro`, y `web/src/styles/menu.css`). Sustituye al diseño anterior (lista con guía punteada). Referencia fijada por el usuario: `../referencias/estilo-web-referencia.png`.
 
 ## Modo y estructura
 
@@ -43,7 +43,7 @@ Mientras no haya fotos, el hueco de foto de cada tarjeta es un plato de porcelan
 
 ## Componentes y estados
 
-- Iconos de **Lucide** (`lucide-static`, trazo de 2px) importados como SVG en línea; uno por categoría (mapa `iconos` en `index.astro`).
+- Iconos de **Lucide** (`lucide-static`, trazo de 2px) importados como SVG en línea; uno por categoría (mapa `iconos` en `Carta.astro`).
 - Tarjeta: blanca, radio 14px, sombra suave con desplazamiento. En lista pasa a fila con plato de 56px y precio a la derecha.
 - Estados: categoría activa (`aria-current`), botones de vista (`aria-pressed`), agotado (`.is-off` y badge "Agotado"), búsqueda sin resultados (mensaje con sugerencias y "Ver toda la carta").
 - Sin JavaScript se ve la carta entera con títulos de sección; la clase `.js` activa el filtrado.
