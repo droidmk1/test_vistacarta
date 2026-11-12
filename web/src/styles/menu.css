@@ -1483,3 +1483,27 @@ main {
     clip: rect(0 0 0 0);
   }
 }
+
+/* Botones de la cabecera (idioma y Buscar): fondo blanco para que destaquen sobre el color de la marca */
+.search-btn,
+.idioma-menu summary {
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgb(31 26 23 / 0.18);
+}
+
+.search-btn:hover,
+.idioma-menu summary:hover,
+.idioma-menu[open] summary {
+  background: var(--ground);
+}
+
+.search-btn .ico,
+.idioma-menu .chevron {
+  color: var(--ink);
+}
+
+.search-btn:focus-visible,
+.idioma-menu summary:focus-visible {
+  outline-color: var(--on-red);
+}
