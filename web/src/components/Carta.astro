@@ -233,7 +233,8 @@ const anio = new Date().getFullYear();
         </section>
       )}
 
-      <nav class="cats" id="carta" aria-label="Categorías de la carta">
+      <div id="carta" class="ancla" aria-hidden="true"></div>
+      <nav class="cats" aria-label="Categorías de la carta">
         <ul>
           {categorias.map((categoria, i) => (
             <li>
@@ -289,10 +290,14 @@ const anio = new Date().getFullYear();
                     </div>
                     {plato.descripcion && <p class="dish-desc">{plato.descripcion}</p>}
                     {plato.alergenos?.length > 0 && (
-                      <p class="alg">
-                        <span class="alg-label">{plato.alergenos_confirmados ? 'Alérgenos:' : 'Posibles alérgenos:'}</span>{' '}
-                        {plato.alergenos.filter((id) => ALERGENO[id]).map((id) => ALERGENO[id].nombre).join(' · ')}
-                      </p>
+                      <div class="alg">
+                        <span class="alg-label">{plato.alergenos_confirmados ? 'Alérgenos' : 'Posibles alérgenos'}</span>
+                        <ul class="alg-list">
+                          {plato.alergenos.filter((id) => ALERGENO[id]).map((id) => (
+                            <li><span class="ico" set:html={ALERGENO[id].icono} />{ALERGENO[id].nombre}</li>
+                          ))}
+                        </ul>
+                      </div>
                     )}
                     {(!plato.disponible || enOferta(plato)) && (
                       <p class="dish-badges">

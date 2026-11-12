@@ -29,7 +29,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 116px;
+  scroll-padding-top: 60px;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -305,16 +305,36 @@ main {
 
 .accion {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  min-height: 46px;
-  padding: 0 6px;
+  gap: 4px;
+  min-width: 0;
+  min-height: 60px;
+  padding: 8px 4px;
   border: 1px solid var(--line);
   border-radius: 10px;
   font-weight: 700;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  text-align: center;
   transition: border-color 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.accion > span:last-child {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 440px) {
+  .accion {
+    flex-direction: row;
+    gap: 8px;
+    min-height: 48px;
+    font-size: 0.875rem;
+  }
 }
 
 .accion .ico {
@@ -506,11 +526,15 @@ main {
 
 /* Categorías: pestañas de texto */
 
+.ancla {
+  height: 0;
+  margin-top: 24px;
+}
+
 .cats {
   position: sticky;
   top: 60px;
   z-index: 10;
-  margin-top: 24px;
   background: var(--page);
   border-bottom: 1px solid var(--line);
 }
@@ -764,12 +788,43 @@ main {
 }
 
 .alg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  margin-top: 2px;
   font-size: 0.8125rem;
-  color: var(--ink-mute);
+  color: var(--ink-soft);
 }
 
 .alg-label {
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--ink-mute);
+}
+
+.alg-list {
+  display: contents;
+}
+
+.alg-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.alg-list .ico {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--ground);
+  color: var(--ink);
+}
+
+.alg-list .ico svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2;
 }
 
 .dish-badges {
@@ -1224,10 +1279,6 @@ main {
 /* ---------- Pantallas grandes ---------- */
 
 @media (min-width: 720px) {
-  .acciones {
-    grid-auto-columns: minmax(0, 200px);
-  }
-
   .dia {
     padding: 20px 24px;
   }
