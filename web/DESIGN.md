@@ -1,5 +1,9 @@
 # Diseño: carta pública
 
+> **Versión actual: v3 (sobria).** Fondo blanco, sin tarjetas con sombra; el color de marca (de `menu.json`) solo en cabecera, pestaña activa, pie y botones principales. Categorías como pestañas de texto con subrayado. Platos como carta impresa (nombre y precio en la misma línea, línea fina entre platos); sin foto no hay hueco de imagen. Alérgenos en una línea gris ("Posibles alérgenos: Gluten · Soja"). Barra inferior fija de 3 botones: Carta, Buscar, Info. Pie de marca con logo, redes, dirección, horario, teléfono y reseña.
+> Opcionales (solo aparecen con datos): `plato.foto_url` (activa la vista "Fotos"), `plato.precio_anterior` (precio tachado y -%), `plato.destacado` (sección "Nuestros favoritos"), `restaurante.contacto` {direccion, horario, telefono, mapa_url}, `restaurante.redes` {instagram, facebook, whatsapp{numero,mensaje}, google_resenas}.
+> Lo de abajo describe la v1 y queda como historial. Versiones: etiquetas git `v1-original`, `v2-marca-alergenos`, `v3-sobria`.
+
 Sistema visual de la carta pública de Wantan (`web/src/components/Carta.astro`, una página por restaurante en `web/src/pages/[slug].astro`, y `web/src/styles/menu.css`). Sustituye al diseño anterior (lista con guía punteada). Referencia fijada por el usuario: `../referencias/estilo-web-referencia.png`.
 
 ## Modo y estructura
