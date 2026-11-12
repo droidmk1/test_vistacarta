@@ -144,6 +144,19 @@ for (const l of idiomas) {
     if (desc) d[`p:${p.id}:d`] = desc;
   }
   for (const a of ALERGENOS) d[`a:${a.id}`] = nombreAlergeno(a, l);
+  if (dia) {
+    // Menú del día: nombre, qué incluye, horario y exclusiones en cada idioma.
+    const horas = dia.horario?.match(/(\d{1,2}:\d{2}).*?(\d{1,2}:\d{2})/);
+    const lv = /^De lunes a viernes/.test(dia.horario ?? '');
+    const exc = dia.excluye ? (/^festivos$/i.test(dia.excluye) ? u.festivos : dia.excluye.toLowerCase()) : null;
+    const corto = horas && lv ? `${u.dias} ${horas[1]} ${u.a} ${horas[2]} h` : l === lang ? diaHorarioCorto : '';
+    d['dia:nombre'] = l === lang ? dia.nombre : u.menuDia;
+    d['dia:incluye'] = dia.incluye?.length ? capital(listaL(dia.incluye.map((w) => u.palabrasDia[w] ?? w), u)) : '';
+    d['dia:meta'] = [corto, exc && `${u.noIncluye} ${exc}`].filter(Boolean).join(' · ');
+    d['dia:info'] = l === lang
+      ? `${dia.horario}.${dia.excluye ? ` ${u.noIncluye} ${dia.excluye.toLowerCase()}.` : ''}`
+      : `${horas && lv ? `${u.diasLargo}, ${horas[1]} ${u.a} ${horas[2]} h` : dia.horario}.${exc ? ` ${u.noIncluye} ${exc}.` : ''}`;
+  }
   diccionario[l] = d;
 }
 const datosJs = JSON.stringify({
@@ -232,10 +245,10 @@ const datosJs = JSON.stringify({
       <section class="dia" id="menu-dia" aria-labelledby="dia-titulo">
         <div class="dia-head">
           <div>
-            <h2 id="dia-titulo">{dia.nombre}</h2>
-            {diaIncluye && <p class="dia-meta">{diaIncluye}</p>}
+            <h2 id="dia-titulo" data-t="dia:nombre">{dia.nombre}</h2>
+            {diaIncluye && <p class="dia-meta" data-t="dia:incluye">{diaIncluye}</p>}
             {(diaHorarioCorto || dia.excluye) && (
-              <p class="dia-meta">{[diaHorarioCorto && `${diaHorarioCorto} h`, dia.excluye && `${t.noIncluye} ${dia.excluye.toLowerCase()}`].filter(Boolean).join(' · ')}</p>
+              <p class="dia-meta" data-t="dia:meta">{[diaHorarioCorto && `${diaHorarioCorto} h`, dia.excluye && `${t.noIncluye} ${dia.excluye.toLowerCase()}`].filter(Boolean).join(' · ')}</p>
             )}
           </div>
           <p class="dia-price" data-precio={dia.precio}>{fmt(dia.precio)}</p>
@@ -393,8 +406,8 @@ const datosJs = JSON.stringify({
         <dl>
           {dia?.horario && (
             <div>
-              <dt>{dia.nombre}</dt>
-              <dd>{dia.horario}.{dia.excluye && ` ${t.noIncluye} ${dia.excluye.toLowerCase()}.`}</dd>
+              <dt data-t="dia:nombre">{dia.nombre}</dt>
+              <dd data-t="dia:info">{dia.horario}.{dia.excluye && ` ${t.noIncluye} ${dia.excluye.toLowerCase()}.`}</dd>
             </div>
           )}
           <div>

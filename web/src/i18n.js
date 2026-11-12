@@ -9,6 +9,8 @@ export const IDIOMAS = {
 
 export const UI = {
   es: {
+    menuDia: 'Menú del día', dias: 'L–V', diasLargo: 'De lunes a viernes', a: 'a', festivos: 'festivos',
+    palabrasDia: { entrante: 'entrante', segundo: 'segundo', bebida: 'bebida', postre: 'postre' },
     carta: 'Carta', buscar: 'Buscar', buscarPlaceholder: 'Busca un plato', buscarEnCarta: 'Buscar en la carta', cancelar: 'Cancelar',
     irInicio: 'ir al inicio', idioma: 'Idioma',
     reservasRedes: 'Reservas y redes', reservar: 'Reservar', reservarMesa: 'Reservar mesa', reservarWa: 'Reserva por WhatsApp',
@@ -30,12 +32,14 @@ export const UI = {
     descripcion: (nombre, n) => `Carta de ${nombre}: ${n} platos.`, titulo: 'Carta',
   },
   en: {
+    menuDia: 'Set menu', dias: 'Mon–Fri', diasLargo: 'Monday to Friday', a: 'to', festivos: 'bank holidays',
+    palabrasDia: { entrante: 'starter', segundo: 'main', bebida: 'drink', postre: 'dessert' },
     carta: 'Menu', buscar: 'Search', buscarPlaceholder: 'Search for a dish', buscarEnCarta: 'Search the menu', cancelar: 'Cancel',
     irInicio: 'go to top', idioma: 'Language',
     reservasRedes: 'Bookings and social media', reservar: 'Book', reservarMesa: 'Book a table', reservarWa: 'Book via WhatsApp',
     seguirIg: 'Follow us on Instagram', resenas: 'Reviews', dejarResena: 'Leave us a Google review', dejarResenaPie: 'Leave us a Google review',
     verMenu: 'See the set menu dishes', ocultarMenu: 'Hide the dishes', entrantes: 'Starters', segundos: 'Mains', bebidaSuplemento: 'Drinks with supplement',
-    noIncluye: 'Not included', favoritos: 'Our favourites', categorias: 'Menu categories',
+    noIncluye: 'Not on', favoritos: 'Our favourites', categorias: 'Menu categories',
     vista: 'View', lista: 'List', fotos: 'Photos', ordenar: 'Sort', ordenarPor: 'Sort by', ordenPlatos: 'Dish order',
     recomendado: 'Recommended', precioAsc: 'Price: low to high', precioDesc: 'Price: high to low', az: 'A – Z', za: 'Z – A',
     mostrar: 'Show results', cerrar: 'Close',
@@ -51,6 +55,8 @@ export const UI = {
     descripcion: (nombre, n) => `${nombre} menu: ${n} dishes.`, titulo: 'Menu',
   },
   ca: {
+    menuDia: 'Menú del dia', dias: 'Dl–Dv', diasLargo: 'De dilluns a divendres', a: 'a', festivos: 'festius',
+    palabrasDia: { entrante: 'entrant', segundo: 'segon', bebida: 'beguda', postre: 'postres' },
     carta: 'Carta', buscar: 'Cercar', buscarPlaceholder: 'Cerca un plat', buscarEnCarta: 'Cerca a la carta', cancelar: 'Cancel·la',
     irInicio: 'anar a l’inici', idioma: 'Idioma',
     reservasRedes: 'Reserves i xarxes', reservar: 'Reservar', reservarMesa: 'Reserva taula', reservarWa: 'Reserva per WhatsApp',

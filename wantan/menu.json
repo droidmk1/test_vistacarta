@@ -17,7 +17,9 @@
     },
     "moneda": "EUR",
     "idiomas": [
-      "es"
+      "es",
+      "en",
+      "ca"
     ]
   },
   "fuente": "PDF_WANTAN.pdf (4 páginas, Canva, sin capa de texto; transcrito por lectura de imagen)",
@@ -134,7 +136,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Fried Wantán (half dozen)"
+            },
+            "ca": {
+              "nombre": "Wantán fregit (mitja dotzena)"
+            }
+          }
         },
         {
           "id": "p02",
@@ -148,7 +158,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Fried Wantán (dozen)"
+            },
+            "ca": {
+              "nombre": "Wantán fregit (dotzena)"
+            }
+          }
         },
         {
           "id": "p03",
@@ -162,7 +180,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Amazonian Baskets (half dozen)"
+            },
+            "ca": {
+              "nombre": "Cistelletes amazòniques (mitja dotzena)"
+            }
+          }
         },
         {
           "id": "p04",
@@ -176,7 +202,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Amazonian Baskets (dozen)"
+            },
+            "ca": {
+              "nombre": "Cistelletes amazòniques (dotzena)"
+            }
+          }
         },
         {
           "id": "p05",
@@ -191,7 +225,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Fried Prawn Wantán (half dozen)"
+            },
+            "ca": {
+              "nombre": "Wantán fregit de gambes (mitja dotzena)"
+            }
+          }
         },
         {
           "id": "p06",
@@ -206,7 +248,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Fried Prawn Wantán (dozen)"
+            },
+            "ca": {
+              "nombre": "Wantán fregit de gambes (dotzena)"
+            }
+          }
         },
         {
           "id": "p07",
@@ -219,7 +269,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Spring Rolls (half dozen)"
+            },
+            "ca": {
+              "nombre": "Rotllets de primavera (mitja dotzena)"
+            }
+          }
         },
         {
           "id": "p08",
@@ -232,7 +290,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Spring Rolls (dozen)"
+            },
+            "ca": {
+              "nombre": "Rotllets de primavera (dotzena)"
+            }
+          }
         },
         {
           "id": "p09",
@@ -246,7 +312,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chinese Dumplings (half dozen)"
+            },
+            "ca": {
+              "nombre": "Empanadetes xineses (mitja dotzena)"
+            }
+          }
         },
         {
           "id": "p10",
@@ -260,7 +334,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chinese Dumplings (dozen)"
+            },
+            "ca": {
+              "nombre": "Empanadetes xineses (dotzena)"
+            }
+          }
         },
         {
           "id": "p11",
@@ -273,7 +355,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken Chicharrón"
+            },
+            "ca": {
+              "nombre": "Chicharrón de pollastre"
+            }
+          }
         },
         {
           "id": "p12",
@@ -286,7 +376,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken Chicharrón with white rice"
+            },
+            "ca": {
+              "nombre": "Chicharrón de pollastre amb arròs blanc"
+            }
+          }
         },
         {
           "id": "p13",
@@ -296,7 +394,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "French Fries"
+            },
+            "ca": {
+              "nombre": "Patates fregides"
+            }
+          }
         },
         {
           "id": "p14",
@@ -306,7 +412,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Fried Cassava"
+            },
+            "ca": {
+              "nombre": "Iuca fregida"
+            }
+          }
         },
         {
           "id": "p15",
@@ -316,9 +430,25 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Patacones (fried plantain)"
+            },
+            "ca": {
+              "nombre": "Patacones (plàtan fregit)"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Starters"
+        },
+        "ca": {
+          "nombre": "Entrants"
+        }
+      }
     },
     {
       "nombre": "Sopas",
@@ -348,7 +478,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Ginger"
+            },
+            "ca": {
+              "nombre": "De gingebre"
+            }
+          }
         },
         {
           "id": "p18",
@@ -361,7 +499,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken and Vegetable"
+            },
+            "ca": {
+              "nombre": "De pollastre amb verdures"
+            }
+          }
         },
         {
           "id": "p19",
@@ -374,7 +520,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegetable"
+            },
+            "ca": {
+              "nombre": "De verdures"
+            }
+          }
         },
         {
           "id": "p20",
@@ -403,9 +557,25 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Special Wantán"
+            },
+            "ca": {
+              "nombre": "Wantán especial"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Soups"
+        },
+        "ca": {
+          "nombre": "Sopes"
+        }
+      }
     },
     {
       "nombre": "Alitas",
@@ -421,7 +591,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Fried Wings"
+            },
+            "ca": {
+              "nombre": "Ales fregides"
+            }
+          }
         },
         {
           "id": "p23",
@@ -435,7 +613,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Wings with Vegetables"
+            },
+            "ca": {
+              "nombre": "Ales amb verdures"
+            }
+          }
         },
         {
           "id": "p24",
@@ -448,7 +634,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Sweet and Sour Wings"
+            },
+            "ca": {
+              "nombre": "Ales agredolces"
+            }
+          }
         },
         {
           "id": "p25",
@@ -461,7 +655,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Spicy Wings"
+            },
+            "ca": {
+              "nombre": "Ales picants"
+            }
+          }
         },
         {
           "id": "p26",
@@ -475,7 +677,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Tausi Wings (black bean)"
+            },
+            "ca": {
+              "nombre": "Ales tausi (mongeta negra)"
+            }
+          }
         },
         {
           "id": "p27",
@@ -490,9 +700,25 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Acevichada Wings"
+            },
+            "ca": {
+              "nombre": "Ales acevitxades"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Chicken Wings"
+        },
+        "ca": {
+          "nombre": "Ales de pollastre"
+        }
+      }
     },
     {
       "nombre": "Aeropuertos",
@@ -511,7 +737,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Aeropuerto with Chicken"
+            },
+            "ca": {
+              "nombre": "Aeropuerto amb pollastre"
+            }
+          }
         },
         {
           "id": "p29",
@@ -527,7 +761,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Aeropuerto with Pork"
+            },
+            "ca": {
+              "nombre": "Aeropuerto amb porc"
+            }
+          }
         },
         {
           "id": "p30",
@@ -543,7 +785,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Mixed Aeropuerto"
+            },
+            "ca": {
+              "nombre": "Aeropuerto mixt"
+            }
+          }
         },
         {
           "id": "p31",
@@ -559,7 +809,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Aeropuerto with Beef"
+            },
+            "ca": {
+              "nombre": "Aeropuerto amb vedella"
+            }
+          }
         },
         {
           "id": "p32",
@@ -576,7 +834,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Special Aeropuerto"
+            },
+            "ca": {
+              "nombre": "Aeropuerto especial"
+            }
+          }
         },
         {
           "id": "p33",
@@ -592,7 +858,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Aeropuerto with Duck"
+            },
+            "ca": {
+              "nombre": "Aeropuerto amb ànec"
+            }
+          }
         },
         {
           "id": "p34",
@@ -609,7 +883,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Aeropuerto with Chicken and Prawn"
+            },
+            "ca": {
+              "nombre": "Aeropuerto amb pollastre i llagostí"
+            }
+          }
         },
         {
           "id": "p35",
@@ -625,7 +907,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Aeropuerto with Cured Beef"
+            },
+            "ca": {
+              "nombre": "Aeropuerto de cecina"
+            }
+          }
         },
         {
           "id": "p36",
@@ -642,7 +932,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Aeropuerto with Prawns"
+            },
+            "ca": {
+              "nombre": "Aeropuerto amb llagostins"
+            }
+          }
         },
         {
           "id": "p37",
@@ -659,7 +957,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Aeropuerto with Seafood"
+            },
+            "ca": {
+              "nombre": "Aeropuerto amb marisc"
+            }
+          }
         },
         {
           "id": "p38",
@@ -676,7 +982,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "House-style Aeropuerto"
+            },
+            "ca": {
+              "nombre": "Aeropuerto de la casa"
+            }
+          }
         },
         {
           "id": "p39",
@@ -692,7 +1006,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Wild Aeropuerto"
+            },
+            "ca": {
+              "nombre": "Aeropuerto salvatge"
+            }
+          }
         },
         {
           "id": "p40",
@@ -707,7 +1029,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegetarian Aeropuerto"
+            },
+            "ca": {
+              "nombre": "Aeropuerto vegetarià"
+            }
+          }
         },
         {
           "id": "p41",
@@ -721,9 +1051,25 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegan Aeropuerto"
+            },
+            "ca": {
+              "nombre": "Aeropuerto vegà"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Aeropuertos"
+        },
+        "ca": {
+          "nombre": "Aeropuertos"
+        }
+      }
     },
     {
       "nombre": "Arroz Chaufa",
@@ -741,7 +1087,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chaufa Fried Rice with Chicken"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa amb pollastre"
+            }
+          }
         },
         {
           "id": "p43",
@@ -756,7 +1110,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chaufa Fried Rice with Pork"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa amb porc"
+            }
+          }
         },
         {
           "id": "p44",
@@ -771,7 +1133,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Mixed Chaufa Fried Rice"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa mixt"
+            }
+          }
         },
         {
           "id": "p45",
@@ -786,7 +1156,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Amazonian Chaufa Fried Rice"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa amazònic"
+            }
+          }
         },
         {
           "id": "p46",
@@ -801,7 +1179,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chaufa Fried Rice with Beef"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa amb vedella"
+            }
+          }
         },
         {
           "id": "p47",
@@ -817,7 +1203,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Special Chaufa Fried Rice"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa especial"
+            }
+          }
         },
         {
           "id": "p48",
@@ -832,7 +1226,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chaufa Fried Rice with Duck"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa amb ànec"
+            }
+          }
         },
         {
           "id": "p49",
@@ -848,7 +1250,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chaufa Fried Rice with Chicken and Prawns"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa amb pollastre i llagostins"
+            }
+          }
         },
         {
           "id": "p50",
@@ -863,7 +1273,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chaufa Fried Rice with Cured Beef"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa amb cecina"
+            }
+          }
         },
         {
           "id": "p51",
@@ -879,7 +1297,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chaufa Fried Rice with Prawn"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa amb llagostí"
+            }
+          }
         },
         {
           "id": "p52",
@@ -896,7 +1322,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chaufa Fried Rice with Seafood"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa amb marisc"
+            }
+          }
         },
         {
           "id": "p53",
@@ -911,7 +1345,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Wild Chaufa Fried Rice"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa salvatge"
+            }
+          }
         },
         {
           "id": "p54",
@@ -926,7 +1368,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegetarian Chaufa Fried Rice"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa vegetarià"
+            }
+          }
         },
         {
           "id": "p55",
@@ -940,7 +1390,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegan Chaufa Fried Rice"
+            },
+            "ca": {
+              "nombre": "Arròs chaufa vegà"
+            }
+          }
         },
         {
           "id": "p56",
@@ -950,7 +1408,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Portion of White Rice"
+            },
+            "ca": {
+              "nombre": "Ració d’arròs blanc"
+            }
+          }
         },
         {
           "id": "p57",
@@ -965,9 +1431,25 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Portion of Chaufa Rice"
+            },
+            "ca": {
+              "nombre": "Ració d’arròs chaufa"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Chaufa Fried Rice"
+        },
+        "ca": {
+          "nombre": "Arròs chaufa"
+        }
+      }
     },
     {
       "nombre": "Tallarines",
@@ -986,7 +1468,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Stir-fried Noodles with Chicken"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats amb pollastre"
+            }
+          }
         },
         {
           "id": "p59",
@@ -1002,7 +1492,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Stir-fried Noodles with Pork"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats amb porc"
+            }
+          }
         },
         {
           "id": "p60",
@@ -1018,7 +1516,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Mixed Stir-fried Noodles"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats mixtos"
+            }
+          }
         },
         {
           "id": "p61",
@@ -1034,7 +1540,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Stir-fried Noodles with Beef"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats amb vedella"
+            }
+          }
         },
         {
           "id": "p62",
@@ -1051,7 +1565,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Special Stir-fried Noodles"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats especials"
+            }
+          }
         },
         {
           "id": "p63",
@@ -1067,7 +1589,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Stir-fried Noodles with Duck"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats d’ànec"
+            }
+          }
         },
         {
           "id": "p64",
@@ -1084,7 +1614,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Stir-fried Noodles with Seafood"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats de marisc"
+            }
+          }
         },
         {
           "id": "p65",
@@ -1101,7 +1639,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Stir-fried Noodles with Chicken and Prawn"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats amb pollastre i llagostí"
+            }
+          }
         },
         {
           "id": "p66",
@@ -1117,7 +1663,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Stir-fried Noodles with Cured Beef"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats amb cecina"
+            }
+          }
         },
         {
           "id": "p67",
@@ -1134,7 +1688,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Stir-fried Noodles with Prawns"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats amb llagostins"
+            }
+          }
         },
         {
           "id": "p68",
@@ -1150,7 +1712,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Stir-fried Noodles with Chicken Pieces"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats amb trossos de pollastre"
+            }
+          }
         },
         {
           "id": "p69",
@@ -1166,7 +1736,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Stir-fried Noodles with Spicy Chicken Pieces"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats amb trossos de pollastre picants"
+            }
+          }
         },
         {
           "id": "p70",
@@ -1181,7 +1759,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegetarian Stir-fried Noodles"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats vegetarians"
+            }
+          }
         },
         {
           "id": "p71",
@@ -1195,7 +1781,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegan Stir-fried Noodles"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats vegans"
+            }
+          }
         },
         {
           "id": "p72",
@@ -1213,7 +1807,15 @@
           "alergenos_confirmados": false,
           "dudoso": [
             "nombre"
-          ]
+          ],
+          "traducciones": {
+            "en": {
+              "nombre": "Sam Si Noodles"
+            },
+            "ca": {
+              "nombre": "Fideus Sam Si"
+            }
+          }
         },
         {
           "id": "p73",
@@ -1230,7 +1832,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Taypá Noodles"
+            },
+            "ca": {
+              "nombre": "Fideus Taypá"
+            }
+          }
         },
         {
           "id": "p74",
@@ -1246,7 +1856,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Crispy Stir-fried Noodles with Chicken"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents de pollastre"
+            }
+          }
         },
         {
           "id": "p75",
@@ -1262,7 +1880,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Crispy Stir-fried Noodles with Pork"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents de porc"
+            }
+          }
         },
         {
           "id": "p76",
@@ -1278,7 +1904,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Mixed Crispy Stir-fried Noodles"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents mixtos"
+            }
+          }
         },
         {
           "id": "p77",
@@ -1294,7 +1928,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Crispy Stir-fried Noodles with Beef"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents de vedella"
+            }
+          }
         },
         {
           "id": "p78",
@@ -1311,7 +1953,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Special Crispy Stir-fried Noodles"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents especials"
+            }
+          }
         },
         {
           "id": "p79",
@@ -1327,7 +1977,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Crispy Stir-fried Noodles with Duck"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents d’ànec"
+            }
+          }
         },
         {
           "id": "p80",
@@ -1344,7 +2002,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Crispy Stir-fried Noodles with Seafood"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents de marisc"
+            }
+          }
         },
         {
           "id": "p81",
@@ -1361,7 +2027,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Crispy Stir-fried Noodles with Chicken and Prawn"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents de pollastre i llagostí"
+            }
+          }
         },
         {
           "id": "p82",
@@ -1378,7 +2052,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Crispy Stir-fried Noodles with Prawns"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents de llagostins"
+            }
+          }
         },
         {
           "id": "p83",
@@ -1394,7 +2076,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Crispy Stir-fried Noodles with Chicken Pieces"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents de trossos de pollastre"
+            }
+          }
         },
         {
           "id": "p84",
@@ -1410,7 +2100,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Crispy Stir-fried Noodles with Spicy Chicken Pieces"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents de trossos de pollastre picants"
+            }
+          }
         },
         {
           "id": "p85",
@@ -1425,7 +2123,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegetarian Crispy Stir-fried Noodles"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents vegetarians"
+            }
+          }
         },
         {
           "id": "p86",
@@ -1439,7 +2145,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegan Crispy Stir-fried Noodles"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents vegans"
+            }
+          }
         },
         {
           "id": "p87",
@@ -1456,9 +2170,25 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Crispy Taypá Noodles"
+            },
+            "ca": {
+              "nombre": "Fideus saltejats cruixents Taypá"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Noodles"
+        },
+        "ca": {
+          "nombre": "Fideus"
+        }
+      }
     },
     {
       "nombre": "Tortillas",
@@ -1476,7 +2206,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Prawns and Vegetables"
+            },
+            "ca": {
+              "nombre": "De llagostins amb verdures"
+            }
+          }
         },
         {
           "id": "p89",
@@ -1490,7 +2228,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken and Vegetable"
+            },
+            "ca": {
+              "nombre": "De pollastre amb verdures"
+            }
+          }
         },
         {
           "id": "p90",
@@ -1504,9 +2250,25 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Plain Egg"
+            },
+            "ca": {
+              "nombre": "D’ou"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Omelettes"
+        },
+        "ca": {
+          "nombre": "Truites"
+        }
+      }
     },
     {
       "nombre": "Pollo",
@@ -1566,7 +2328,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chijaukay 2 Flavours (sweet and savoury)"
+            },
+            "ca": {
+              "nombre": "Chijaukay 2 sabors (dolç i salat)"
+            }
+          }
         },
         {
           "id": "p95",
@@ -1580,7 +2350,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken Pieces with Vegetables"
+            },
+            "ca": {
+              "nombre": "Trossos de pollastre amb verdures"
+            }
+          }
         },
         {
           "id": "p96",
@@ -1593,7 +2371,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken Pieces with Tamarind (Pineapple and Peach)"
+            },
+            "ca": {
+              "nombre": "Trossos de pollastre amb tamarinde (pinya i préssec)"
+            }
+          }
         },
         {
           "id": "p97",
@@ -1607,7 +2393,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken Pieces with Spicy Vegetables"
+            },
+            "ca": {
+              "nombre": "Trossos de pollastre amb verdures picants"
+            }
+          }
         },
         {
           "id": "p98",
@@ -1621,7 +2415,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken Pieces with Broccoli"
+            },
+            "ca": {
+              "nombre": "Trossos de pollastre amb bròquil"
+            }
+          }
         },
         {
           "id": "p99",
@@ -1635,7 +2437,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken Pieces with Mushrooms"
+            },
+            "ca": {
+              "nombre": "Trossos de pollastre amb xampinyons"
+            }
+          }
         },
         {
           "id": "p100",
@@ -1649,7 +2459,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken Pieces with Bean Sprouts"
+            },
+            "ca": {
+              "nombre": "Trossos de pollastre amb brots de soja"
+            }
+          }
         },
         {
           "id": "p101",
@@ -1662,9 +2480,25 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken Pieces with Garlic"
+            },
+            "ca": {
+              "nombre": "Trossos de pollastre a l’all"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Chicken"
+        },
+        "ca": {
+          "nombre": "Pollastre"
+        }
+      }
     },
     {
       "nombre": "Ternera",
@@ -1681,7 +2515,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Beef with Vegetables"
+            },
+            "ca": {
+              "nombre": "Vedella amb verdures"
+            }
+          }
         },
         {
           "id": "p103",
@@ -1695,7 +2537,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Beef with Mushrooms"
+            },
+            "ca": {
+              "nombre": "Vedella amb xampinyons"
+            }
+          }
         },
         {
           "id": "p104",
@@ -1708,7 +2558,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Beef with Tamarind (Pineapple and Peach)"
+            },
+            "ca": {
+              "nombre": "Vedella amb tamarinde (pinya i préssec)"
+            }
+          }
         },
         {
           "id": "p105",
@@ -1721,7 +2579,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Beef with Garlic"
+            },
+            "ca": {
+              "nombre": "Vedella a l’all"
+            }
+          }
         },
         {
           "id": "p106",
@@ -1735,7 +2601,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Beef with Tausi"
+            },
+            "ca": {
+              "nombre": "Vedella amb Tausi"
+            }
+          }
         },
         {
           "id": "p107",
@@ -1749,7 +2623,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Beef with Broccoli"
+            },
+            "ca": {
+              "nombre": "Vedella amb bròquil"
+            }
+          }
         },
         {
           "id": "p108",
@@ -1763,7 +2645,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Beef with Spicy Vegetables"
+            },
+            "ca": {
+              "nombre": "Vedella amb verdures picants"
+            }
+          }
         },
         {
           "id": "p109",
@@ -1777,7 +2667,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Beef with Chinese Mushrooms"
+            },
+            "ca": {
+              "nombre": "Vedella amb bolets xinesos"
+            }
+          }
         },
         {
           "id": "p110",
@@ -1791,9 +2689,25 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Beef with Bean Sprouts"
+            },
+            "ca": {
+              "nombre": "Vedella amb brots de soja"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Beef"
+        },
+        "ca": {
+          "nombre": "Vedella"
+        }
+      }
     },
     {
       "nombre": "Pato",
@@ -1810,7 +2724,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Duck with Vegetables"
+            },
+            "ca": {
+              "nombre": "Ànec amb verdures"
+            }
+          }
         },
         {
           "id": "p112",
@@ -1824,7 +2746,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Duck with Mushrooms"
+            },
+            "ca": {
+              "nombre": "Ànec amb xampinyons"
+            }
+          }
         },
         {
           "id": "p113",
@@ -1837,7 +2767,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Duck with Tamarind (Pineapple and Peach)"
+            },
+            "ca": {
+              "nombre": "Ànec amb tamarinde (pinya i préssec)"
+            }
+          }
         },
         {
           "id": "p114",
@@ -1850,7 +2788,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Duck with Garlic"
+            },
+            "ca": {
+              "nombre": "Ànec a l’all"
+            }
+          }
         },
         {
           "id": "p115",
@@ -1864,7 +2810,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Duck with Tausi"
+            },
+            "ca": {
+              "nombre": "Ànec amb Tausi"
+            }
+          }
         },
         {
           "id": "p116",
@@ -1878,7 +2832,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Duck with Broccoli"
+            },
+            "ca": {
+              "nombre": "Ànec amb bròquil"
+            }
+          }
         },
         {
           "id": "p117",
@@ -1892,7 +2854,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Duck with Spicy Vegetables"
+            },
+            "ca": {
+              "nombre": "Ànec amb verdures picants"
+            }
+          }
         },
         {
           "id": "p118",
@@ -1906,7 +2876,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Duck with Chinese Mushrooms"
+            },
+            "ca": {
+              "nombre": "Ànec amb bolets xinesos"
+            }
+          }
         },
         {
           "id": "p119",
@@ -1920,9 +2898,25 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Duck with Bean Sprouts"
+            },
+            "ca": {
+              "nombre": "Ànec amb brots de soja"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Duck"
+        },
+        "ca": {
+          "nombre": "Ànec"
+        }
+      }
     },
     {
       "nombre": "Cerdo Asado",
@@ -1939,7 +2933,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Roast Pork with Vegetables"
+            },
+            "ca": {
+              "nombre": "Porc rostit amb verdures"
+            }
+          }
         },
         {
           "id": "p121",
@@ -1953,7 +2955,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Roast Pork with Mushrooms"
+            },
+            "ca": {
+              "nombre": "Porc rostit amb xampinyons"
+            }
+          }
         },
         {
           "id": "p122",
@@ -1966,7 +2976,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Roast Pork with Tamarind (Pineapple and Peach)"
+            },
+            "ca": {
+              "nombre": "Porc rostit amb tamarinde (pinya i préssec)"
+            }
+          }
         },
         {
           "id": "p123",
@@ -1979,7 +2997,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Roast Pork with Garlic"
+            },
+            "ca": {
+              "nombre": "Porc rostit a l’all"
+            }
+          }
         },
         {
           "id": "p124",
@@ -1993,7 +3019,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Roast Pork with Tausi"
+            },
+            "ca": {
+              "nombre": "Porc rostit amb Tausi"
+            }
+          }
         },
         {
           "id": "p125",
@@ -2007,7 +3041,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Roast Pork with Broccoli"
+            },
+            "ca": {
+              "nombre": "Porc rostit amb bròquil"
+            }
+          }
         },
         {
           "id": "p126",
@@ -2021,7 +3063,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Roast Pork with Spicy Vegetables"
+            },
+            "ca": {
+              "nombre": "Porc rostit amb verdures picants"
+            }
+          }
         },
         {
           "id": "p127",
@@ -2035,7 +3085,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Roast Pork with Chinese Mushrooms"
+            },
+            "ca": {
+              "nombre": "Porc rostit amb bolets xinesos"
+            }
+          }
         },
         {
           "id": "p128",
@@ -2049,9 +3107,25 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Roast Pork with Bean Sprouts"
+            },
+            "ca": {
+              "nombre": "Porc rostit amb brots de soja"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Roast Pork"
+        },
+        "ca": {
+          "nombre": "Porc rostit"
+        }
+      }
     },
     {
       "nombre": "Platos a la Plancha",
@@ -2068,7 +3142,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Grilled Taypá"
+            },
+            "ca": {
+              "nombre": "Taypá a la planxa"
+            }
+          }
         },
         {
           "id": "p130",
@@ -2081,7 +3163,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Grilled Chicken Pieces"
+            },
+            "ca": {
+              "nombre": "Trossos de pollastre a la planxa"
+            }
+          }
         },
         {
           "id": "p131",
@@ -2094,7 +3184,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Grilled Beef"
+            },
+            "ca": {
+              "nombre": "Vedella a la planxa"
+            }
+          }
         },
         {
           "id": "p132",
@@ -2107,7 +3205,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Grilled Pork"
+            },
+            "ca": {
+              "nombre": "Porc a la planxa"
+            }
+          }
         },
         {
           "id": "p133",
@@ -2119,9 +3225,25 @@
             "crustaceos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Grilled Prawn"
+            },
+            "ca": {
+              "nombre": "Llagostí a la planxa"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Grilled Dishes"
+        },
+        "ca": {
+          "nombre": "Plats a la planxa"
+        }
+      }
     },
     {
       "nombre": "Platos Especiales",
@@ -2153,7 +3275,17 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicken Saltado",
+              "descripcion": "With chaufa fried rice: +€2.00"
+            },
+            "ca": {
+              "nombre": "Pollastre saltejat",
+              "descripcion": "Amb arròs chaufa: +2,00 €"
+            }
+          }
         },
         {
           "id": "p136",
@@ -2166,9 +3298,25 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "descripcion": "With chaufa fried rice: +€2.00"
+            },
+            "ca": {
+              "descripcion": "Amb arròs chaufa: +2,00 €"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Specials"
+        },
+        "ca": {
+          "nombre": "Plats especials"
+        }
+      }
     },
     {
       "nombre": "Combinados",
@@ -2187,7 +3335,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Combo with Chicken"
+            },
+            "ca": {
+              "nombre": "Combinat de pollastre"
+            }
+          }
         },
         {
           "id": "p138",
@@ -2203,7 +3359,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Combo with Pork"
+            },
+            "ca": {
+              "nombre": "Combinat de porc"
+            }
+          }
         },
         {
           "id": "p139",
@@ -2219,7 +3383,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Mixed Combo"
+            },
+            "ca": {
+              "nombre": "Combinat mixt"
+            }
+          }
         },
         {
           "id": "p140",
@@ -2235,7 +3407,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Combo with Beef"
+            },
+            "ca": {
+              "nombre": "Combinat de vedella"
+            }
+          }
         },
         {
           "id": "p141",
@@ -2252,7 +3432,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Special Combo"
+            },
+            "ca": {
+              "nombre": "Combinat especial"
+            }
+          }
         },
         {
           "id": "p142",
@@ -2269,7 +3457,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Combo with Chicken and Prawns"
+            },
+            "ca": {
+              "nombre": "Combinat de pollastre i llagostins"
+            }
+          }
         },
         {
           "id": "p143",
@@ -2285,7 +3481,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Combo with Duck"
+            },
+            "ca": {
+              "nombre": "Combinat d’ànec"
+            }
+          }
         },
         {
           "id": "p144",
@@ -2302,7 +3506,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Combo with Prawns"
+            },
+            "ca": {
+              "nombre": "Combinat de llagostins"
+            }
+          }
         },
         {
           "id": "p145",
@@ -2317,7 +3529,15 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegetarian Combo"
+            },
+            "ca": {
+              "nombre": "Combinat vegetarià"
+            }
+          }
         },
         {
           "id": "p146",
@@ -2331,9 +3551,25 @@
             "sesamo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Vegan Combo"
+            },
+            "ca": {
+              "nombre": "Combinat vegà"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Combos"
+        },
+        "ca": {
+          "nombre": "Combinats"
+        }
+      }
     },
     {
       "nombre": "Langostino",
@@ -2351,7 +3587,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Prawn with Vegetables"
+            },
+            "ca": {
+              "nombre": "Llagostí amb verdures"
+            }
+          }
         },
         {
           "id": "p148",
@@ -2366,7 +3610,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Prawn with Mushrooms"
+            },
+            "ca": {
+              "nombre": "Llagostí amb xampinyons"
+            }
+          }
         },
         {
           "id": "p149",
@@ -2380,7 +3632,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Prawns with Tamarind (Pineapple and Peach)"
+            },
+            "ca": {
+              "nombre": "Llagostins amb tamarinde (pinya i préssec)"
+            }
+          }
         },
         {
           "id": "p150",
@@ -2395,7 +3655,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Prawn with Broccoli"
+            },
+            "ca": {
+              "nombre": "Llagostí amb bròquil"
+            }
+          }
         },
         {
           "id": "p151",
@@ -2409,7 +3677,15 @@
             "soja"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Prawn with Garlic"
+            },
+            "ca": {
+              "nombre": "Llagostí a l’all"
+            }
+          }
         },
         {
           "id": "p152",
@@ -2424,7 +3700,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Prawns with Spicy Vegetables"
+            },
+            "ca": {
+              "nombre": "Llagostins amb verdures picants"
+            }
+          }
         },
         {
           "id": "p153",
@@ -2439,7 +3723,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Prawn with Tausi"
+            },
+            "ca": {
+              "nombre": "Llagostí amb Tausi"
+            }
+          }
         },
         {
           "id": "p154",
@@ -2454,7 +3746,15 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Prawn with Chinese Mushrooms"
+            },
+            "ca": {
+              "nombre": "Llagostí amb bolets xinesos"
+            }
+          }
         },
         {
           "id": "p155",
@@ -2469,9 +3769,25 @@
             "moluscos"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Prawn with Bean Sprouts"
+            },
+            "ca": {
+              "nombre": "Llagostí amb brots de soja"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Prawns"
+        },
+        "ca": {
+          "nombre": "Llagostins"
+        }
+      }
     },
     {
       "nombre": "Cervezas",
@@ -2510,9 +3826,25 @@
             "gluten"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Draught Beer"
+            },
+            "ca": {
+              "nombre": "Cervesa de barril"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Beers"
+        },
+        "ca": {
+          "nombre": "Cerveses"
+        }
+      }
     },
     {
       "nombre": "Refrescos",
@@ -2537,7 +3869,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Lemonade with Ginger and Mint"
+            },
+            "ca": {
+              "nombre": "Llimonada amb gingebre i menta"
+            }
+          }
         },
         {
           "id": "p161",
@@ -2547,7 +3887,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Passion Fruit"
+            },
+            "ca": {
+              "nombre": "Fruita de la passió"
+            }
+          }
         },
         {
           "id": "p162",
@@ -2557,7 +3905,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Passion Fruit (jug)"
+            },
+            "ca": {
+              "nombre": "Fruita de la passió (gerra)"
+            }
+          }
         },
         {
           "id": "p163",
@@ -2577,7 +3933,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Chicha Morada (jug)"
+            },
+            "ca": {
+              "nombre": "Chicha morada (gerra)"
+            }
+          }
         },
         {
           "id": "p165",
@@ -2587,7 +3951,15 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Water"
+            },
+            "ca": {
+              "nombre": "Aigua"
+            }
+          }
         },
         {
           "id": "p166",
@@ -2607,9 +3979,25 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Soft Drinks"
+            },
+            "ca": {
+              "nombre": "Refrescos"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Soft Drinks"
+        },
+        "ca": {
+          "nombre": "Refrescos"
+        }
+      }
     },
     {
       "nombre": "Cócteles",
@@ -2636,7 +4024,15 @@
             "huevo"
           ],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Passion Fruit Sour"
+            },
+            "ca": {
+              "nombre": "Sour de fruita de la passió"
+            }
+          }
         },
         {
           "id": "p170",
@@ -2656,12 +4052,29 @@
           "disponible": true,
           "alergenos": [],
           "alergenos_confirmados": false,
-          "dudoso": []
+          "dudoso": [],
+          "traducciones": {
+            "en": {
+              "nombre": "Passion Fruit Chilcano"
+            },
+            "ca": {
+              "nombre": "Chilcano de fruita de la passió"
+            }
+          }
         }
-      ]
+      ],
+      "traducciones": {
+        "en": {
+          "nombre": "Cocktails"
+        },
+        "ca": {
+          "nombre": "Còctels"
+        }
+      }
     }
   ],
   "version": 1,
   "estado": "borrador",
-  "alergenos_nota": "Propuesta deducida por IA a partir del nombre del plato y la cocina chifa habitual (sillao, salsa de ostión, aceite de sésamo, masa con huevo). Pendiente de confirmar por el restaurante."
+  "alergenos_nota": "Propuesta deducida por IA a partir del nombre del plato y la cocina chifa habitual (sillao, salsa de ostión, aceite de sésamo, masa con huevo). Pendiente de confirmar por el restaurante.",
+  "traducciones_nota": "Inglés y catalán traducidos por IA (por reglas de frases); pendientes de revisión por el restaurante. El menú del día queda en español."
 }
