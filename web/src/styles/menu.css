@@ -1345,16 +1345,13 @@ main {
   color: var(--red-text);
 }
 
-/* ---------- Selector de idioma (desplegable) ---------- */
+/* ---------- Selector de idioma (en la cabecera, junto a Buscar) ---------- */
 
-.idiomas {
-  position: relative;
-  z-index: 25;
+.appbar-actions {
   display: flex;
-  justify-content: flex-end;
-  padding: 4px max(12px, env(safe-area-inset-right, 0px)) 4px 12px;
-  background: var(--page);
-  border-bottom: 1px solid var(--line);
+  align-items: center;
+  gap: 8px;
+  flex: none;
 }
 
 .idioma-menu {
@@ -1364,23 +1361,28 @@ main {
 .idioma-menu summary {
   display: flex;
   align-items: center;
-  gap: 8px;
-  min-height: 38px;
+  gap: 6px;
+  min-height: 44px;
   padding: 0 10px 0 12px;
-  border: 1px solid var(--line);
   border-radius: 999px;
   cursor: pointer;
   list-style: none;
-  font-size: 0.875rem;
-  font-weight: 700;
+  color: var(--on-red);
+  box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--on-red) 55%, transparent);
+  transition: background 0.2s var(--ease);
 }
 
 .idioma-menu summary::-webkit-details-marker {
   display: none;
 }
 
-.idioma-menu summary:hover {
-  background: var(--ground);
+.idioma-menu summary:hover,
+.idioma-menu[open] summary {
+  background: color-mix(in srgb, var(--on-red) 14%, transparent);
+}
+
+.idioma-menu summary:focus-visible {
+  outline-color: var(--on-red);
 }
 
 .idioma-menu .chevron svg {
@@ -1396,13 +1398,15 @@ main {
 .idioma-lista {
   position: absolute;
   right: 0;
-  top: calc(100% + 6px);
-  min-width: 180px;
+  top: calc(100% + 10px);
+  z-index: 40;
+  min-width: 190px;
   padding: 6px;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--page);
-  box-shadow: 0 10px 28px rgb(31 26 23 / 0.16);
+  color: var(--ink);
+  box-shadow: 0 12px 32px rgb(31 26 23 / 0.2);
 }
 
 .idioma-lista button {
@@ -1410,7 +1414,7 @@ main {
   align-items: center;
   gap: 10px;
   width: 100%;
-  min-height: 44px;
+  min-height: 46px;
   padding: 0 10px;
   border-radius: 8px;
   font-size: 0.9375rem;
@@ -1439,15 +1443,43 @@ main {
 .bandera {
   display: block;
   flex: none;
-  width: 22px;
-  height: 15px;
+  width: 24px;
+  height: 16px;
   border-radius: 2px;
   overflow: hidden;
-  box-shadow: 0 0 0 1px rgb(31 26 23 / 0.15);
+  box-shadow: 0 0 0 1px rgb(31 26 23 / 0.2);
 }
 
 .bandera svg {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+/* Móviles: el logo cede un poco de ancho para que quepan idioma y Buscar */
+@media (max-width: 419px) {
+  .appbar {
+    gap: 8px;
+  }
+
+  .brand-logo img {
+    max-width: 120px;
+  }
+}
+
+/* Móviles muy estrechos: Buscar queda solo con la lupa (la barra inferior conserva el texto "Buscar") */
+@media (max-width: 359px) {
+  .search-btn {
+    width: 44px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .search-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
 }

@@ -167,29 +167,6 @@ const datosJs = JSON.stringify({
   <body id="inicio">
     <script type="application/json" id="vc-datos" set:html={datosJs} />
 
-    {multi && (
-      <div class="idiomas">
-        <details class="idioma-menu" id="idioma-menu">
-          <summary data-ta="aria-label=idioma" aria-label={t.idioma}>
-            <span class="bandera" id="idioma-bandera" set:html={BANDERAS[lang]} />
-            <span id="idioma-nombre">{IDIOMAS[lang].nombre}</span>
-            <span class="ico chevron" set:html={iChevron} />
-          </summary>
-          <ul class="idioma-lista">
-            {idiomas.map((l) => (
-              <li>
-                <button type="button" data-set-lang={l} lang={l} aria-current={l === lang ? 'true' : undefined}>
-                  <span class="bandera" set:html={BANDERAS[l]} />
-                  <span>{IDIOMAS[l].nombre}</span>
-                  <span class="ico check" set:html={iCheck} />
-                </button>
-              </li>
-            ))}
-          </ul>
-        </details>
-      </div>
-    )}
-
     <header class="appbar">
       <a class="brand" href="#inicio" data-ta="aria-label=marca" aria-label={`${R.nombre}, ${t.irInicio}`}>
         {logo ? (
@@ -202,10 +179,32 @@ const datosJs = JSON.stringify({
           {apellido && <span class="brand-sub">{apellido}</span>}
         </span>
       </a>
-      <button class="search-btn" type="button" data-open-search aria-controls="buscador" aria-expanded="false">
-        <span class="ico" set:html={iSearch} />
-        <span data-t="buscar">{t.buscar}</span>
-      </button>
+      <div class="appbar-actions">
+        {multi && (
+          <details class="idioma-menu" id="idioma-menu">
+            <summary aria-label={`${t.idioma}: ${IDIOMAS[lang].nombre}`}>
+              <span class="bandera" id="idioma-bandera" set:html={BANDERAS[lang]} />
+              <span class="sr-only" id="idioma-nombre">{IDIOMAS[lang].nombre}</span>
+              <span class="ico chevron" set:html={iChevron} />
+            </summary>
+            <ul class="idioma-lista">
+              {idiomas.map((l) => (
+                <li>
+                  <button type="button" data-set-lang={l} lang={l} aria-current={l === lang ? 'true' : undefined}>
+                    <span class="bandera" set:html={BANDERAS[l]} />
+                    <span>{IDIOMAS[l].nombre}</span>
+                    <span class="ico check" set:html={iCheck} />
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </details>
+        )}
+        <button class="search-btn" type="button" data-open-search aria-controls="buscador" aria-expanded="false">
+          <span class="ico" set:html={iSearch} />
+          <span class="search-text" data-t="buscar">{t.buscar}</span>
+        </button>
+      </div>
     </header>
 
     <div class="searchbar" id="buscador" hidden>
@@ -619,6 +618,7 @@ const datosJs = JSON.stringify({
               b.setAttribute('aria-current', 'true');
               document.getElementById('idioma-bandera').innerHTML = b.querySelector('.bandera').innerHTML;
               document.getElementById('idioma-nombre').textContent = b.querySelector('.bandera + span').textContent;
+              menuEl.querySelector('summary').setAttribute('aria-label', `${d.idioma}: ${b.querySelector('.bandera + span').textContent}`);
             } else b.removeAttribute('aria-current');
           });
         }
